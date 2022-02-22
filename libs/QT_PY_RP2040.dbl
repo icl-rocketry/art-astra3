@@ -4,7 +4,7 @@
 <designblock>
 <description></description>
 <attributes>
-<attribute name="BOARDSIZE" value="0.828 x 0.828 inch"/>
+<attribute name="BOARDSIZE" value="0.81 x 0.825 inch"/>
 <attribute name="LAYERS" value="0:"/>
 </attributes>
 <drawings>
