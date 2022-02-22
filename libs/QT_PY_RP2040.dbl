@@ -4,7 +4,7 @@
 <designblock>
 <description></description>
 <attributes>
-<attribute name="BOARDSIZE" value="0.81 x 0.825 inch"/>
+<attribute name="BOARDSIZE" value="0.828 x 0.828 inch"/>
 <attribute name="LAYERS" value="0:"/>
 </attributes>
 <drawings>
@@ -635,12 +635,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="JP3" gate="A" pin="1"/>
 </segment>
 </net>
-<net name="+5V" class="1">
+<net name="VCC" class="1">
 <segment>
 <wire x1="-35.56" y1="142.24" x2="-53.34" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="142.24" x2="-53.34" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="A" pin="7"/>
 <pinref part="SUPPLY3" gate="+5V" pin="+5V"/>
+<label x="-48.26" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -1135,7 +1136,7 @@ einem neuen Namen ab.</description>
 <signal name="SCL">
 <contactref element="JP1" pad="6"/>
 </signal>
-<signal name="+5V" class="1">
+<signal name="VCC" class="1">
 <contactref element="JP3" pad="7"/>
 </signal>
 <signal name="+3V3">
