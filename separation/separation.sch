@@ -455,41 +455,6 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="supply2" urn="urn:adsk.eagle:library:372">
-<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
-GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
-Please keep in mind, that these devices are necessary for the
-automatic wiring of the supply signals.&lt;p&gt;
-The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
-In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="+05V" urn="urn:adsk.eagle:symbol:26987/1" library_version="2">
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
-<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
-<text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="+5V" urn="urn:adsk.eagle:component:27032/1" prefix="SUPPLY" library_version="2">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="+5V" symbol="+05V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -505,7 +470,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="JP2" library="microbuilder" deviceset="HEADER-1X7" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP4" library="microbuilder" deviceset="HEADER-1X7" device=""/>
-<part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
@@ -524,9 +488,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="JP4" gate="A" x="35.56" y="63.5" smashed="yes" rot="MR180">
 <attribute name="NAME" x="29.21" y="52.705" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="29.21" y="76.2" size="1.778" layer="96" rot="MR180"/>
-</instance>
-<instance part="SUPPLY1" gate="+5V" x="15.24" y="81.28" smashed="yes">
-<attribute name="VALUE" x="13.335" y="84.455" size="1.778" layer="96"/>
 </instance>
 <instance part="+3V1" gate="G$1" x="12.7" y="66.04" smashed="yes" rot="R90">
 <attribute name="VALUE" x="17.78" y="63.5" size="1.778" layer="96" rot="R180"/>
@@ -629,9 +590,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <net name="VCC" class="1">
 <segment>
 <wire x1="33.02" y1="71.12" x2="15.24" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="71.12" x2="15.24" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="A" pin="7"/>
-<pinref part="SUPPLY1" gate="+5V" pin="+5V"/>
 <label x="20.32" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
