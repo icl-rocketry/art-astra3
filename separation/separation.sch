@@ -197,12 +197,6 @@
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="+3V3" urn="urn:adsk.eagle:symbol:26950/1" library_version="1">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="VCC" urn="urn:adsk.eagle:symbol:26928/1" library_version="1">
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
@@ -215,19 +209,6 @@
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="+3V3" urn="urn:adsk.eagle:component:26981/1" prefix="+3V3" library_version="1">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="+3V3" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -364,12 +345,6 @@
 <text x="-1.524" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="3.3V">
-<wire x1="-1.27" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<text x="-1.524" y="1.016" size="1.27" layer="96">&gt;VALUE</text>
-<pin name="3.3V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="HEADER-1X7" prefix="JP" uservalue="yes">
@@ -440,19 +415,6 @@
 <description>&lt;b&gt;GND&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="3.3V">
-<description>&lt;b&gt;3.3V Supply&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="3.3V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -1346,13 +1308,10 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <part name="JP2" library="microbuilder" deviceset="HEADER-1X7" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP4" library="microbuilder" deviceset="HEADER-1X7" device=""/>
-<part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="U$1" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$2" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="JP3" library="microbuilder" deviceset="HEADER-1X7" device="70MIL"/>
 <part name="U$5" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$6" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="JP6" library="microbuilder" deviceset="HEADER-1X7" device="70MIL"/>
 <part name="IC1" library="SamacSys_Parts" deviceset="L7805ACV" device=""/>
@@ -1390,14 +1349,8 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <attribute name="NAME" x="29.21" y="52.705" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="29.21" y="76.2" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="+3V1" gate="G$1" x="12.7" y="66.04" smashed="yes" rot="R90">
-<attribute name="VALUE" x="17.78" y="63.5" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="U$1" gate="G$1" x="116.84" y="60.96" smashed="yes">
 <attribute name="VALUE" x="115.316" y="58.42" size="1.27" layer="96"/>
-</instance>
-<instance part="U$2" gate="G$1" x="91.44" y="76.2" smashed="yes">
-<attribute name="VALUE" x="89.916" y="77.216" size="1.27" layer="96"/>
 </instance>
 <instance part="P+1" gate="VCC" x="99.06" y="76.2" smashed="yes">
 <attribute name="VALUE" x="96.52" y="73.66" size="1.778" layer="96" rot="R90"/>
@@ -1408,9 +1361,6 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 </instance>
 <instance part="U$5" gate="G$1" x="58.42" y="10.16" smashed="yes">
 <attribute name="VALUE" x="56.896" y="7.62" size="1.27" layer="96"/>
-</instance>
-<instance part="U$6" gate="G$1" x="33.02" y="25.4" smashed="yes">
-<attribute name="VALUE" x="31.496" y="26.416" size="1.27" layer="96"/>
 </instance>
 <instance part="P+3" gate="VCC" x="40.64" y="25.4" smashed="yes">
 <attribute name="VALUE" x="38.1" y="22.86" size="1.778" layer="96" rot="R90"/>
@@ -1540,13 +1490,6 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <label x="43.18" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
-<segment>
-<wire x1="33.02" y1="66.04" x2="15.24" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="A" pin="5"/>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
-</segment>
-</net>
 <net name="SCL" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="6"/>
@@ -1618,20 +1561,6 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <wire x1="93.98" y1="2.54" x2="93.98" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="-5.08" x2="101.6" y2="-5.08" width="0.1524" layer="91"/>
 <label x="104.14" y="-5.08" size="2.032" layer="95"/>
-</segment>
-</net>
-<net name="3.3V" class="2">
-<segment>
-<wire x1="106.68" y1="66.04" x2="91.44" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="66.04" x2="91.44" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="3.3V"/>
-<pinref part="JP3" gate="A" pin="2"/>
-</segment>
-<segment>
-<wire x1="48.26" y1="15.24" x2="33.02" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="15.24" x2="33.02" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="3.3V"/>
-<pinref part="JP6" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="SDO/ADR" class="0">
