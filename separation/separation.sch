@@ -489,6 +489,32 @@
 <wire x1="7.75" y1="3.07" x2="-2.65" y2="3.07" width="0.2" layer="21"/>
 <wire x1="-2.65" y1="3.07" x2="-2.65" y2="0" width="0.2" layer="21"/>
 </package>
+<package name="KMTG0902">
+<description>&lt;b&gt;KMTG0902-2&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-4" y="0" dx="4.2" dy="2" layer="1" rot="R90"/>
+<smd name="2" x="4" y="0" dx="4.2" dy="2" layer="1" rot="R90"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-4.5" y1="4.5" x2="4.5" y2="4.5" width="0.1" layer="51"/>
+<wire x1="4.5" y1="4.5" x2="4.5" y2="-4.5" width="0.1" layer="51"/>
+<wire x1="4.5" y1="-4.5" x2="-4.5" y2="-4.5" width="0.1" layer="51"/>
+<wire x1="-4.5" y1="-4.5" x2="-4.5" y2="4.5" width="0.1" layer="51"/>
+<wire x1="-6" y1="5.5" x2="6" y2="5.5" width="0.1" layer="51"/>
+<wire x1="6" y1="5.5" x2="6" y2="-5.5" width="0.1" layer="51"/>
+<wire x1="6" y1="-5.5" x2="-6" y2="-5.5" width="0.1" layer="51"/>
+<wire x1="-6" y1="-5.5" x2="-6" y2="5.5" width="0.1" layer="51"/>
+<wire x1="-5.4" y1="-0.2" x2="-5.4" y2="-0.2" width="0.1" layer="21"/>
+<wire x1="-5.4" y1="-0.2" x2="-5.5" y2="-0.2" width="0.1" layer="21" curve="180"/>
+<wire x1="-5.5" y1="-0.2" x2="-5.5" y2="-0.2" width="0.1" layer="21"/>
+<wire x1="-5.5" y1="-0.2" x2="-5.4" y2="-0.2" width="0.1" layer="21" curve="180"/>
+<wire x1="-4.5" y1="-2.4" x2="-4.5" y2="-4.5" width="0.2" layer="21"/>
+<wire x1="-4.5" y1="-4.5" x2="4.5" y2="-4.5" width="0.2" layer="21"/>
+<wire x1="4.5" y1="-4.5" x2="4.5" y2="-2.4" width="0.2" layer="21"/>
+<wire x1="4.5" y1="2.4" x2="4.5" y2="4.5" width="0.2" layer="21"/>
+<wire x1="4.5" y1="4.5" x2="-4.5" y2="4.5" width="0.2" layer="21"/>
+<wire x1="-4.5" y1="4.5" x2="-4.5" y2="2.4" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="L7805ACV">
@@ -501,6 +527,16 @@
 <pin name="INPUT" x="0" y="0" length="middle" rot="R90"/>
 <pin name="GND" x="2.54" y="0" length="middle" rot="R90"/>
 <pin name="OUTPUT" x="5.08" y="0" length="middle" rot="R90"/>
+</symbol>
+<symbol name="KMTG0902">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" length="middle"/>
+<pin name="2" x="0" y="-2.54" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -526,6 +562,31 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/2988508P"&gt; Datashe
 <attribute name="MANUFACTURER_PART_NUMBER" value="L7805ACV" constant="no"/>
 <attribute name="RS_PART_NUMBER" value="2988508P" constant="no"/>
 <attribute name="RS_PRICE-STOCK" value="http://uk.rs-online.com/web/p/products/2988508P" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KMTG0902" prefix="LS">
+<description>&lt;b&gt;RS PRO 65 (Minimum)dB SMD Square Wave Piezo Buzzer&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="KMTG0902" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="KMTG0902">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="RS PRO 65 (Minimum)dB SMD Square Wave Piezo Buzzer" constant="no"/>
+<attribute name="HEIGHT" value="2.2mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="RS Components" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="KMTG0902" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="1812715" constant="no"/>
+<attribute name="RS_PRICE-STOCK" value="https://uk.rs-online.com/web/p/products/1812715" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -561,6 +622,8 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/2988508P"&gt; Datashe
 <part name="JP6" library="microbuilder" deviceset="HEADER-1X7" device="70MIL"/>
 <part name="IC1" library="SamacSys_Parts" deviceset="L7805ACV" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="LS1" library="SamacSys_Parts" deviceset="KMTG0902" device=""/>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -571,6 +634,7 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/2988508P"&gt; Datashe
 <text x="30.48" y="30.48" size="5.08" layer="91">DPS-B</text>
 <wire x1="91.44" y1="-48.26" x2="91.44" y2="-45.72" width="0.1524" layer="94" style="shortdash"/>
 <text x="78.74" y="30.48" size="5.08" layer="91">Regulator</text>
+<text x="132.08" y="30.48" size="5.08" layer="91">Buzzer</text>
 </plain>
 <instances>
 <instance part="JP2" gate="A" x="58.42" y="63.5" smashed="yes">
@@ -620,6 +684,13 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/2988508P"&gt; Datashe
 <instance part="GND2" gate="1" x="91.44" y="-15.24" smashed="yes">
 <attribute name="VALUE" x="88.9" y="-17.78" size="1.778" layer="96"/>
 </instance>
+<instance part="LS1" gate="G$1" x="132.08" y="12.7" smashed="yes">
+<attribute name="NAME" x="148.59" y="20.32" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="148.59" y="17.78" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="GND3" gate="1" x="132.08" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="129.54" y="-5.08" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -644,6 +715,11 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/2988508P"&gt; Datashe
 <pinref part="IC1" gate="G$1" pin="GND"/>
 <wire x1="91.44" y1="2.54" x2="91.44" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="LS1" gate="G$1" pin="2"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="132.08" y1="10.16" x2="132.08" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -674,7 +750,7 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/2988508P"&gt; Datashe
 <wire x1="55.88" y1="63.5" x2="43.18" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="A2" class="0">
+<net name="SERVO" class="0">
 <segment>
 <label x="43.18" y="66.04" size="1.778" layer="95"/>
 <pinref part="JP2" gate="A" pin="3"/>
@@ -693,13 +769,6 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/2988508P"&gt; Datashe
 <wire x1="33.02" y1="66.04" x2="15.24" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="A" pin="5"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
-</segment>
-</net>
-<net name="A0" class="0">
-<segment>
-<label x="43.18" y="71.12" size="1.778" layer="95"/>
-<pinref part="JP2" gate="A" pin="1"/>
-<wire x1="43.18" y1="71.12" x2="55.88" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -754,7 +823,7 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/2988508P"&gt; Datashe
 <segment>
 <wire x1="33.02" y1="71.12" x2="15.24" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="A" pin="7"/>
-<label x="20.32" y="78.74" size="1.778" layer="95"/>
+<label x="12.7" y="73.66" size="2.032" layer="95"/>
 </segment>
 <segment>
 <wire x1="106.68" y1="68.58" x2="99.06" y2="68.58" width="0.1524" layer="91"/>
@@ -821,6 +890,18 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/2988508P"&gt; Datashe
 <wire x1="88.9" y1="2.54" x2="88.9" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="-5.08" x2="78.74" y2="-5.08" width="0.1524" layer="91"/>
 <label x="78.74" y="-5.08" size="2.032" layer="95"/>
+</segment>
+</net>
+<net name="BUZZ" class="0">
+<segment>
+<pinref part="LS1" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="12.7" x2="121.92" y2="12.7" width="0.1524" layer="91"/>
+<label x="121.92" y="15.24" size="2.032" layer="95"/>
+</segment>
+<segment>
+<label x="43.18" y="71.12" size="1.778" layer="95"/>
+<pinref part="JP2" gate="A" pin="1"/>
+<wire x1="43.18" y1="71.12" x2="55.88" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
