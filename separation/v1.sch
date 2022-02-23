@@ -426,11 +426,11 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="SamacSys_Parts">
+<library name="SamacSys_Parts" urn="urn:adsk.eagle:library:34276110">
 <description>&lt;b&gt;https://componentsearchengine.com&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
 <packages>
-<package name="TO255P460X1020X2008-3P">
+<package name="TO255P460X1020X2008-3P" urn="urn:adsk.eagle:footprint:34276116/1" library_version="1">
 <description>&lt;b&gt;3-Pin TO-220&lt;/b&gt;&lt;br&gt;
 </description>
 <pad name="1" x="0" y="0" drill="1.32" diameter="1.98" shape="square"/>
@@ -451,7 +451,7 @@
 <wire x1="7.75" y1="3.07" x2="-2.65" y2="3.07" width="0.2" layer="21"/>
 <wire x1="-2.65" y1="3.07" x2="-2.65" y2="0" width="0.2" layer="21"/>
 </package>
-<package name="KMTG0902">
+<package name="KMTG0902" urn="urn:adsk.eagle:footprint:34276114/1" library_version="1">
 <description>&lt;b&gt;KMTG0902-2&lt;/b&gt;&lt;br&gt;
 </description>
 <smd name="1" x="-4" y="0" dx="4.2" dy="2" layer="1" rot="R90"/>
@@ -478,8 +478,22 @@
 <wire x1="-4.5" y1="4.5" x2="-4.5" y2="2.4" width="0.2" layer="21"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="TO255P460X1020X2008-3P" urn="urn:adsk.eagle:package:34276127/1" type="box" library_version="1">
+<description>&lt;b&gt;3-Pin TO-220&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="TO255P460X1020X2008-3P"/>
+</packageinstances>
+</package3d>
+<package3d name="KMTG0902" urn="urn:adsk.eagle:package:34276126/1" type="box" library_version="1">
+<description>&lt;b&gt;KMTG0902-2&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="KMTG0902"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="L7805ACV">
+<symbol name="L7805ACV" urn="urn:adsk.eagle:symbol:34276121/1" library_version="1">
 <wire x1="-2.54" y1="20.32" x2="7.62" y2="20.32" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="20.32" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
@@ -490,7 +504,7 @@
 <pin name="GND" x="2.54" y="0" length="middle" rot="R90"/>
 <pin name="OUTPUT" x="5.08" y="0" length="middle" rot="R90"/>
 </symbol>
-<symbol name="KMTG0902">
+<symbol name="KMTG0902" urn="urn:adsk.eagle:symbol:34276120/1" library_version="1">
 <wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
 <wire x1="15.24" y1="-5.08" x2="15.24" y2="2.54" width="0.254" layer="94"/>
 <wire x1="15.24" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
@@ -502,7 +516,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="L7805ACV" prefix="IC">
+<deviceset name="L7805ACV" urn="urn:adsk.eagle:component:34276132/1" prefix="IC" library_version="1">
 <description>&lt;b&gt;Linear voltage regulator,L7805ACV 5V 1A STMicroelectronics L7805ACV, Single Linear Voltage Regulator, 1A 5 V, 2%, 3-Pin TO-220&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="http://uk.rs-online.com/web/p/products/2988508P"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
@@ -515,6 +529,9 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/2988508P"&gt; Datashe
 <connect gate="G$1" pin="INPUT" pad="1"/>
 <connect gate="G$1" pin="OUTPUT" pad="3"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:34276127/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="ALLIED_NUMBER" value="70013701" constant="no"/>
@@ -529,7 +546,7 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/2988508P"&gt; Datashe
 </device>
 </devices>
 </deviceset>
-<deviceset name="KMTG0902" prefix="LS">
+<deviceset name="KMTG0902" urn="urn:adsk.eagle:component:34276131/1" prefix="LS" library_version="1">
 <description>&lt;b&gt;RS PRO 65 (Minimum)dB SMD Square Wave Piezo Buzzer&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <gates>
@@ -541,6 +558,9 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:34276126/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="DESCRIPTION" value="RS PRO 65 (Minimum)dB SMD Square Wave Piezo Buzzer" constant="no"/>
@@ -1314,9 +1334,9 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <part name="U$5" library="microbuilder" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="JP6" library="microbuilder" deviceset="HEADER-1X7" device="70MIL"/>
-<part name="IC1" library="SamacSys_Parts" deviceset="L7805ACV" device=""/>
+<part name="IC1" library="SamacSys_Parts" library_urn="urn:adsk.eagle:library:34276110" deviceset="L7805ACV" device="" package3d_urn="urn:adsk.eagle:package:34276127/1"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="LS1" library="SamacSys_Parts" deviceset="KMTG0902" device=""/>
+<part name="LS1" library="SamacSys_Parts" library_urn="urn:adsk.eagle:library:34276110" deviceset="KMTG0902" device="" package3d_urn="urn:adsk.eagle:package:34276126/1"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="U$3" library="microbuilder" deviceset="GND" device=""/>
