@@ -464,6 +464,75 @@
 </deviceset>
 </devicesets>
 </library>
+<library name="SamacSys_Parts">
+<description>&lt;b&gt;https://componentsearchengine.com&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="TO255P460X1020X2008-3P">
+<description>&lt;b&gt;3-Pin TO-220&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="1.32" diameter="1.98" shape="square"/>
+<pad name="2" x="2.55" y="0" drill="1.32" diameter="1.98"/>
+<pad name="3" x="5.1" y="0" drill="1.32" diameter="1.98"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-2.9" y1="3.32" x2="8" y2="3.32" width="0.05" layer="51"/>
+<wire x1="8" y1="3.32" x2="8" y2="-1.78" width="0.05" layer="51"/>
+<wire x1="8" y1="-1.78" x2="-2.9" y2="-1.78" width="0.05" layer="51"/>
+<wire x1="-2.9" y1="-1.78" x2="-2.9" y2="3.32" width="0.05" layer="51"/>
+<wire x1="-2.65" y1="3.07" x2="7.75" y2="3.07" width="0.1" layer="51"/>
+<wire x1="7.75" y1="3.07" x2="7.75" y2="-1.53" width="0.1" layer="51"/>
+<wire x1="7.75" y1="-1.53" x2="-2.65" y2="-1.53" width="0.1" layer="51"/>
+<wire x1="-2.65" y1="-1.53" x2="-2.65" y2="3.07" width="0.1" layer="51"/>
+<wire x1="-2.65" y1="1.795" x2="-1.375" y2="3.07" width="0.1" layer="51"/>
+<wire x1="7.75" y1="-1.53" x2="7.75" y2="3.07" width="0.2" layer="21"/>
+<wire x1="7.75" y1="3.07" x2="-2.65" y2="3.07" width="0.2" layer="21"/>
+<wire x1="-2.65" y1="3.07" x2="-2.65" y2="0" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="L7805ACV">
+<wire x1="-2.54" y1="20.32" x2="7.62" y2="20.32" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="20.32" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="20.32" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<text x="8.89" y="25.4" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="8.89" y="22.86" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="INPUT" x="0" y="0" length="middle" rot="R90"/>
+<pin name="GND" x="2.54" y="0" length="middle" rot="R90"/>
+<pin name="OUTPUT" x="5.08" y="0" length="middle" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="L7805ACV" prefix="IC">
+<description>&lt;b&gt;Linear voltage regulator,L7805ACV 5V 1A STMicroelectronics L7805ACV, Single Linear Voltage Regulator, 1A 5 V, 2%, 3-Pin TO-220&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://uk.rs-online.com/web/p/products/2988508P"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="L7805ACV" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO255P460X1020X2008-3P">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="INPUT" pad="1"/>
+<connect gate="G$1" pin="OUTPUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ALLIED_NUMBER" value="70013701" constant="no"/>
+<attribute name="DESCRIPTION" value="Linear voltage regulator,L7805ACV 5V 1A STMicroelectronics L7805ACV, Single Linear Voltage Regulator, 1A 5 V, 2%, 3-Pin TO-220" constant="no"/>
+<attribute name="HEIGHT" value="4.6mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="STMicroelectronics" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="L7805ACV" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="2988508P" constant="no"/>
+<attribute name="RS_PRICE-STOCK" value="http://uk.rs-online.com/web/p/products/2988508P" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -490,6 +559,8 @@
 <part name="U$6" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="JP6" library="microbuilder" deviceset="HEADER-1X7" device="70MIL"/>
+<part name="IC1" library="SamacSys_Parts" deviceset="L7805ACV" device=""/>
+<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -499,6 +570,7 @@
 <text x="96.52" y="81.28" size="5.08" layer="91">DPS-A</text>
 <text x="30.48" y="30.48" size="5.08" layer="91">DPS-B</text>
 <wire x1="91.44" y1="-48.26" x2="91.44" y2="-45.72" width="0.1524" layer="94" style="shortdash"/>
+<text x="78.74" y="30.48" size="5.08" layer="91">Regulator</text>
 </plain>
 <instances>
 <instance part="JP2" gate="A" x="58.42" y="63.5" smashed="yes">
@@ -541,6 +613,13 @@
 <attribute name="NAME" x="44.45" y="20.955" size="1.778" layer="95"/>
 <attribute name="VALUE" x="44.45" y="-2.54" size="1.778" layer="96"/>
 </instance>
+<instance part="IC1" gate="G$1" x="88.9" y="2.54" smashed="yes">
+<attribute name="NAME" x="97.79" y="27.94" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="97.79" y="25.4" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="GND2" gate="1" x="91.44" y="-15.24" smashed="yes">
+<attribute name="VALUE" x="88.9" y="-17.78" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -560,6 +639,11 @@
 <pinref part="U$5" gate="G$1" pin="GND"/>
 <wire x1="48.26" y1="12.7" x2="58.42" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="JP6" gate="A" pin="3"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="GND"/>
+<wire x1="91.44" y1="2.54" x2="91.44" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -684,6 +768,12 @@
 <pinref part="P+3" gate="VCC" pin="VCC"/>
 <pinref part="JP6" gate="A" pin="1"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="OUTPUT"/>
+<wire x1="93.98" y1="2.54" x2="93.98" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-5.08" x2="101.6" y2="-5.08" width="0.1524" layer="91"/>
+<label x="104.14" y="-5.08" size="2.032" layer="95"/>
+</segment>
 </net>
 <net name="3.3V" class="2">
 <segment>
@@ -723,6 +813,14 @@
 <wire x1="48.26" y1="7.62" x2="35.56" y2="7.62" width="0.1524" layer="91"/>
 <label x="35.56" y="7.62" size="1.778" layer="95"/>
 <pinref part="JP6" gate="A" pin="5"/>
+</segment>
+</net>
+<net name="VBAT" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="INPUT"/>
+<wire x1="88.9" y1="2.54" x2="88.9" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="-5.08" x2="78.74" y2="-5.08" width="0.1524" layer="91"/>
+<label x="78.74" y="-5.08" size="2.032" layer="95"/>
 </segment>
 </net>
 </nets>
