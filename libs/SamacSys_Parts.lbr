@@ -59,6 +59,28 @@
 <description>&lt;b&gt;https://componentsearchengine.com&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
 <packages>
+<package name="CAPPRD400W70D900H500">
+<description>&lt;b&gt;PCB Mount Buzzer&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="0.9" diameter="1.35" shape="square" />
+<pad name="2" x="4" y="0" drill="0.9" diameter="1.35" />
+<text x="0" y="0" align="center" size="1.27" layer="25" rot="R0">&gt;NAME</text>
+<text x="0" y="0" align="center" size="1.27" layer="27" rot="R0">&gt;VALUE</text>
+<circle x="2" y="0" radius="5" width="0.05" layer="21" />
+<circle x="2" y="0" radius="4.5" width="0.2" layer="25" />
+<circle x="2" y="0" radius="4.5" width="0.1" layer="51" />
+</package>
+<package name="CAPPRD320W70D660H400">
+<description>&lt;b&gt;PCB Mount Buzzer&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="0.9" diameter="1.35" shape="square" />
+<pad name="2" x="3.2" y="0" drill="0.9" diameter="1.35" />
+<text x="0" y="0" align="center" size="1.27" layer="25" rot="R0">&gt;NAME</text>
+<text x="0" y="0" align="center" size="1.27" layer="27" rot="R0">&gt;VALUE</text>
+<circle x="1.6" y="0" radius="3.8" width="0.05" layer="21" />
+<circle x="1.6" y="0" radius="3.3" width="0.2" layer="25" />
+<circle x="1.6" y="0" radius="3.3" width="0.1" layer="51" />
+</package>
 <package name="TO255P460X1020X2008-3P">
 <description>&lt;b&gt;3-Pin TO-220&lt;/b&gt;&lt;br&gt;
 </description>
@@ -134,6 +156,26 @@
 </package>
 </packages>
 <symbols>
+<symbol name="KSTG931AP">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94" />
+<wire x1="15.24" y1="-5.08" x2="15.24" y2="2.54" width="0.254" layer="94" />
+<wire x1="15.24" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94" />
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94" />
+<text x="16.51" y="7.62" align="center-left" size="1.778" layer="95">&gt;NAME</text>
+<text x="16.51" y="5.08" align="center-left" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="+" x="0" y="0" length="middle" direction="io" rot="R0" />
+<pin name="-" x="0" y="-2.54" length="middle" direction="io" rot="R0" />
+</symbol>
+<symbol name="KCG0603">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94" />
+<wire x1="15.24" y1="-5.08" x2="15.24" y2="2.54" width="0.254" layer="94" />
+<wire x1="15.24" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94" />
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94" />
+<text x="16.51" y="7.62" align="center-left" size="1.778" layer="95">&gt;NAME</text>
+<text x="16.51" y="5.08" align="center-left" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="+" x="0" y="0" length="middle" direction="io" rot="R0" />
+<pin name="-" x="0" y="-2.54" length="middle" direction="io" rot="R0" />
+</symbol>
 <symbol name="L7805ACV">
 <wire x1="-2.54" y1="20.32" x2="7.62" y2="20.32" width="0.254" layer="94" />
 <wire x1="7.62" y1="5.08" x2="7.62" y2="20.32" width="0.254" layer="94" />
@@ -169,6 +211,56 @@
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="KSTG931AP" prefix="LS">
+<description>&lt;b&gt;RS PRO 4V Electromagnetic Buzzer, 92dB&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="KSTG931AP" x="0" y="0" />
+</gates>
+<devices>
+<device name="" package="CAPPRD400W70D900H500">
+<connects>
+<connect gate="G$1" pin="+" pad="1" />
+<connect gate="G$1" pin="-" pad="2" />
+</connects>
+<technologies>
+<technology name="">
+<attribute name="RS_Part_Number" value="" constant="no" />
+<attribute name="RS_Price-Stock" value="" constant="no" />
+<attribute name="Manufacturer_Name" value="RS Components" constant="no" />
+<attribute name="Manufacturer_Part_Number" value="KSTG931AP" constant="no" />
+<attribute name="Description" value="RS PRO 4V Electromagnetic Buzzer, 92dB" constant="no" />
+<attribute name="Height" value="5mm" constant="no" />
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KCG0603" prefix="LS">
+<description>&lt;b&gt;RS PRO 4V Electromagnetic Buzzer, 80dB&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="KCG0603" x="0" y="0" />
+</gates>
+<devices>
+<device name="" package="CAPPRD320W70D660H400">
+<connects>
+<connect gate="G$1" pin="+" pad="1" />
+<connect gate="G$1" pin="-" pad="2" />
+</connects>
+<technologies>
+<technology name="">
+<attribute name="RS_Part_Number" value="" constant="no" />
+<attribute name="RS_Price-Stock" value="" constant="no" />
+<attribute name="Manufacturer_Name" value="RS Components" constant="no" />
+<attribute name="Manufacturer_Part_Number" value="KCG0603" constant="no" />
+<attribute name="Description" value="RS PRO 4V Electromagnetic Buzzer, 80dB" constant="no" />
+<attribute name="Height" value="4mm" constant="no" />
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="L7805ACV" prefix="IC">
 <description>&lt;b&gt;Linear voltage regulator,L7805ACV 5V 1A STMicroelectronics L7805ACV, Single Linear Voltage Regulator, 1A 5 V, 2%, 3-Pin TO-220&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="http://uk.rs-online.com/web/p/products/2988508P"&gt; Datasheet &lt;/a&gt;</description>
