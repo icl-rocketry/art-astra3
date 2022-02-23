@@ -1323,6 +1323,7 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <part name="PAD1" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,17/1,1" package3d_urn="urn:adsk.eagle:package:30832/1"/>
 <part name="PAD2" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="WIREPAD" device="3,17/1,1" package3d_urn="urn:adsk.eagle:package:30832/1"/>
 <part name="U$4" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$2" library="microbuilder" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1336,6 +1337,8 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <text x="132.08" y="30.48" size="5.08" layer="91">Buzzer</text>
 <text x="-27.94" y="25.4" size="2.032" layer="91">Servo Connection</text>
 <text x="7.62" y="-12.7" size="2.032" layer="91">Battery Connection</text>
+<text x="10.16" y="10.16" size="1.27" layer="91">sending address pin to ground 
+changes i2c address</text>
 </plain>
 <instances>
 <instance part="JP2" gate="A" x="58.42" y="63.5" smashed="yes">
@@ -1401,6 +1404,9 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <instance part="U$4" gate="G$1" x="25.4" y="-30.48" smashed="yes" rot="R90">
 <attribute name="VALUE" x="27.94" y="-32.004" size="1.27" layer="96" rot="R90"/>
 </instance>
+<instance part="U$2" gate="G$1" x="17.78" y="7.62" smashed="yes" rot="R270">
+<attribute name="VALUE" x="15.24" y="9.144" size="1.27" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1440,6 +1446,12 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <pinref part="PAD2" gate="G$1" pin="P"/>
 <pinref part="U$4" gate="G$1" pin="GND"/>
 <wire x1="5.08" y1="-30.48" x2="22.86" y2="-30.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<label x="35.56" y="7.62" size="1.778" layer="95"/>
+<pinref part="JP6" gate="A" pin="5"/>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<wire x1="48.26" y1="7.62" x2="20.32" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -1570,13 +1582,6 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <pinref part="JP3" gate="A" pin="5"/>
 </segment>
 </net>
-<net name="SDO/ADR_2" class="0">
-<segment>
-<wire x1="48.26" y1="7.62" x2="35.56" y2="7.62" width="0.1524" layer="91"/>
-<label x="35.56" y="7.62" size="1.778" layer="95"/>
-<pinref part="JP6" gate="A" pin="5"/>
-</segment>
-</net>
 <net name="VBAT" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="INPUT"/>
@@ -1614,6 +1619,10 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
