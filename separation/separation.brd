@@ -755,11 +755,6 @@ design rules under a new name.</description>
 <signal name="SDO/ADR">
 <contactref element="JP3" pad="5"/>
 </signal>
-<signal name="CS">
-<contactref element="JP3" pad="7"/>
-<contactref element="JP6" pad="7"/>
-<wire x1="94.869" y1="72.898" x2="113.538" y2="72.771" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="SDO/ADR_2">
 <contactref element="JP6" pad="5"/>
 </signal>

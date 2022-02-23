@@ -1570,18 +1570,6 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <pinref part="JP3" gate="A" pin="5"/>
 </segment>
 </net>
-<net name="CS" class="0">
-<segment>
-<wire x1="106.68" y1="53.34" x2="93.98" y2="53.34" width="0.1524" layer="91"/>
-<label x="93.98" y="53.34" size="1.778" layer="95"/>
-<pinref part="JP3" gate="A" pin="7"/>
-</segment>
-<segment>
-<wire x1="48.26" y1="2.54" x2="35.56" y2="2.54" width="0.1524" layer="91"/>
-<label x="35.56" y="2.54" size="1.778" layer="95"/>
-<pinref part="JP6" gate="A" pin="7"/>
-</segment>
-</net>
 <net name="SDO/ADR_2" class="0">
 <segment>
 <wire x1="48.26" y1="7.62" x2="35.56" y2="7.62" width="0.1524" layer="91"/>
