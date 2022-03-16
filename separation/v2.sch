@@ -5455,32 +5455,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="58.42" y1="58.42" x2="45.72" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="A2" class="0">
-<segment>
-<label x="45.72" y="60.96" size="1.778" layer="95"/>
-<pinref part="MCU-L" gate="A" pin="3"/>
-<wire x1="45.72" y1="60.96" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="A1" class="0">
-<segment>
-<pinref part="MCU-L" gate="A" pin="2"/>
-<wire x1="58.42" y1="63.5" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
-<label x="45.72" y="63.5" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="+3V3" class="0">
 <segment>
 <wire x1="35.56" y1="60.96" x2="17.78" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="MCU-R" gate="A" pin="5"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
-</segment>
-</net>
-<net name="A0" class="0">
-<segment>
-<label x="45.72" y="66.04" size="1.778" layer="95"/>
-<pinref part="MCU-L" gate="A" pin="1"/>
-<wire x1="45.72" y1="66.04" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -5558,6 +5537,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="-17.78" y1="35.56" x2="-17.78" y2="30.48" width="0.1524" layer="91"/>
 <label x="-27.94" y="30.48" size="1.778" layer="95"/>
 </segment>
+<segment>
+<label x="45.72" y="60.96" size="1.778" layer="95"/>
+<pinref part="MCU-L" gate="A" pin="3"/>
+<wire x1="45.72" y1="60.96" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="BUZZ" class="0">
 <segment>
@@ -5565,6 +5549,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="119.38" y1="38.1" x2="114.3" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="38.1" x2="114.3" y2="45.72" width="0.1524" layer="91"/>
 <label x="116.84" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MCU-L" gate="A" pin="2"/>
+<wire x1="58.42" y1="63.5" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
+<label x="45.72" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VSENSE" class="0">
@@ -5576,6 +5565,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="-10.16" y1="-7.62" x2="-10.16" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="-10.16" y="-7.62"/>
 <label x="-10.16" y="-20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<label x="45.72" y="66.04" size="1.778" layer="95"/>
+<pinref part="MCU-L" gate="A" pin="1"/>
+<wire x1="45.72" y1="66.04" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
