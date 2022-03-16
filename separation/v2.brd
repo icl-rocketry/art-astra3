@@ -1763,20 +1763,20 @@ design rules under a new name.</description>
 </signal>
 <signal name="SERVO">
 <contactref element="SERCON" pad="3"/>
-<contactref element="MCU-L" pad="3"/>
-<wire x1="7.62" y1="21.3995" x2="12.7" y2="16.51" width="0" layer="19" extent="1-1"/>
+<contactref element="MCU-L" pad="2"/>
+<wire x1="7.62" y1="18.8595" x2="12.7" y2="16.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUZZ">
 <contactref element="LOUD" pad="1"/>
-<contactref element="MCU-L" pad="2"/>
-<wire x1="7.62" y1="18.8595" x2="-16.51" y2="29.21" width="0" layer="19" extent="1-1"/>
+<contactref element="MCU-L" pad="1"/>
+<wire x1="-16.51" y1="29.21" x2="7.62" y2="16.3195" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VSENSE">
 <contactref element="R1" pad="2"/>
 <contactref element="R2" pad="1"/>
-<contactref element="MCU-L" pad="1"/>
-<wire x1="15.367" y1="32.131" x2="7.62" y2="16.3195" width="0" layer="19" extent="1-1"/>
+<contactref element="MCU-L" pad="3"/>
 <wire x1="12.573" y1="32.131" x2="15.367" y2="32.131" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="21.3995" x2="12.573" y2="32.131" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
