@@ -972,6 +972,12 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <pinref part="MCU-R" gate="A" pin="7"/>
 <label x="22.86" y="73.66" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="LDO" gate="G$1" pin="OUTPUT"/>
+<wire x1="45.72" y1="-2.54" x2="45.72" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-10.16" x2="50.8" y2="-10.16" width="0.1524" layer="91"/>
+<label x="53.34" y="-10.16" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VBAT" class="0">
 <segment>
@@ -980,6 +986,18 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <wire x1="-17.78" y1="40.64" x2="-17.78" y2="45.72" width="0.1524" layer="91"/>
 <label x="-25.4" y="43.18" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="BAT" gate="G$1" pin="1"/>
+<wire x1="-15.24" y1="10.16" x2="-20.32" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="10.16" x2="-20.32" y2="15.24" width="0.1524" layer="91"/>
+<label x="-17.78" y="15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LDO" gate="G$1" pin="INPUT"/>
+<wire x1="40.64" y1="-2.54" x2="40.64" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="-10.16" x2="33.02" y2="-10.16" width="0.1524" layer="91"/>
+<label x="27.94" y="-10.16" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SERVO" class="0">
 <segment>
@@ -987,6 +1005,14 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <wire x1="-7.62" y1="35.56" x2="-17.78" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="35.56" x2="-17.78" y2="30.48" width="0.1524" layer="91"/>
 <label x="-27.94" y="30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BUZZ" class="0">
+<segment>
+<pinref part="LOUD" gate="G$1" pin="+"/>
+<wire x1="119.38" y1="38.1" x2="114.3" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="38.1" x2="114.3" y2="45.72" width="0.1524" layer="91"/>
+<label x="116.84" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
