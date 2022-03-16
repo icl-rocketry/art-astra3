@@ -455,6 +455,73 @@
 </deviceset>
 </devicesets>
 </library>
+<library name="SamacSys_Parts">
+<description>&lt;b&gt;https://componentsearchengine.com&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="CAPPRD400W70D900H500" urn="urn:adsk.eagle:footprint:34276118/1">
+<description>&lt;b&gt;PCB Mount Buzzer&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="0.9" diameter="1.35" shape="square"/>
+<pad name="2" x="4" y="0" drill="0.9" diameter="1.35"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<circle x="2" y="0" radius="5" width="0.05" layer="21"/>
+<circle x="2" y="0" radius="4.5" width="0.2" layer="25"/>
+<circle x="2" y="0" radius="4.5" width="0.1" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="CAPPRD400W70D900H500" urn="urn:adsk.eagle:package:34276129/2" type="model">
+<description>&lt;b&gt;PCB Mount Buzzer&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="CAPPRD400W70D900H500"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="KSTG931AP" urn="urn:adsk.eagle:symbol:34276124/1">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="+" x="0" y="0" length="middle"/>
+<pin name="-" x="0" y="-2.54" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="KSTG931AP" urn="urn:adsk.eagle:component:34276134/2" prefix="LS">
+<description>&lt;b&gt;RS PRO 4V Electromagnetic Buzzer, 92dB&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="KSTG931AP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CAPPRD400W70D900H500">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:34276129/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="RS PRO 4V Electromagnetic Buzzer, 92dB" constant="no"/>
+<attribute name="HEIGHT" value="5mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="RS Components" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="KSTG931AP" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="" constant="no"/>
+<attribute name="RS_PRICE-STOCK" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -471,6 +538,7 @@
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP4" library="microbuilder" deviceset="HEADER-1X7" device=""/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="LS1" library="SamacSys_Parts" deviceset="KSTG931AP" device="" package3d_urn="urn:adsk.eagle:package:34276129/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -490,6 +558,10 @@
 </instance>
 <instance part="+3V1" gate="G$1" x="15.24" y="60.96" smashed="yes" rot="R90">
 <attribute name="VALUE" x="20.32" y="58.42" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="LS1" gate="G$1" x="119.38" y="38.1" smashed="yes">
+<attribute name="NAME" x="135.89" y="45.72" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="135.89" y="43.18" size="1.778" layer="96" align="center-left"/>
 </instance>
 </instances>
 <busses>
@@ -609,6 +681,11 @@ with this version.
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
 will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
