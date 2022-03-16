@@ -657,9 +657,9 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 </class>
 </classes>
 <parts>
-<part name="JP2" library="microbuilder" deviceset="HEADER-1X7" device=""/>
+<part name="MCU-L" library="microbuilder" deviceset="HEADER-1X7" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="JP4" library="microbuilder" deviceset="HEADER-1X7" device=""/>
+<part name="MCU-R" library="microbuilder" deviceset="HEADER-1X7" device=""/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="LOUD" library="SamacSys_Parts" deviceset="KSTG931AP" device="" package3d_urn="urn:adsk.eagle:package:34276129/2"/>
 <part name="LDO" library="SamacSys_Parts" deviceset="L7805ACV" device="" package3d_urn="urn:adsk.eagle:package:34276127/2"/>
@@ -670,14 +670,14 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <plain>
 </plain>
 <instances>
-<instance part="JP2" gate="A" x="60.96" y="58.42" smashed="yes">
+<instance part="MCU-L" gate="A" x="60.96" y="58.42" smashed="yes">
 <attribute name="NAME" x="54.61" y="69.215" size="1.778" layer="95"/>
 <attribute name="VALUE" x="54.61" y="45.72" size="1.778" layer="96"/>
 </instance>
 <instance part="GND1" gate="1" x="10.16" y="60.96" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="12.7" y="58.42" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="JP4" gate="A" x="38.1" y="58.42" smashed="yes" rot="MR180">
+<instance part="MCU-R" gate="A" x="38.1" y="58.42" smashed="yes" rot="MR180">
 <attribute name="NAME" x="31.75" y="47.625" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="31.75" y="71.12" size="1.778" layer="96" rot="MR180"/>
 </instance>
@@ -704,47 +704,47 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="35.56" y1="63.5" x2="10.16" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="JP4" gate="A" pin="6"/>
+<pinref part="MCU-R" gate="A" pin="6"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
 <wire x1="35.56" y1="58.42" x2="17.78" y2="58.42" width="0.1524" layer="91"/>
 <label x="20.32" y="58.42" size="1.778" layer="95"/>
-<pinref part="JP4" gate="A" pin="4"/>
+<pinref part="MCU-R" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="MISO" class="0">
 <segment>
 <wire x1="35.56" y1="55.88" x2="17.78" y2="55.88" width="0.1524" layer="91"/>
 <label x="20.32" y="55.88" size="1.778" layer="95"/>
-<pinref part="JP4" gate="A" pin="3"/>
+<pinref part="MCU-R" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="SCK" class="0">
 <segment>
 <wire x1="35.56" y1="53.34" x2="17.78" y2="53.34" width="0.1524" layer="91"/>
 <label x="20.32" y="53.34" size="1.778" layer="95"/>
-<pinref part="JP4" gate="A" pin="2"/>
+<pinref part="MCU-R" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="A3" class="0">
 <segment>
 <label x="45.72" y="58.42" size="1.778" layer="95"/>
-<pinref part="JP2" gate="A" pin="4"/>
+<pinref part="MCU-L" gate="A" pin="4"/>
 <wire x1="58.42" y1="58.42" x2="45.72" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A2" class="0">
 <segment>
 <label x="45.72" y="60.96" size="1.778" layer="95"/>
-<pinref part="JP2" gate="A" pin="3"/>
+<pinref part="MCU-L" gate="A" pin="3"/>
 <wire x1="45.72" y1="60.96" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A1" class="0">
 <segment>
-<pinref part="JP2" gate="A" pin="2"/>
+<pinref part="MCU-L" gate="A" pin="2"/>
 <wire x1="58.42" y1="63.5" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
 <label x="45.72" y="63.5" size="1.778" layer="95"/>
 </segment>
@@ -752,34 +752,34 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <net name="+3V3" class="0">
 <segment>
 <wire x1="35.56" y1="60.96" x2="17.78" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="A" pin="5"/>
+<pinref part="MCU-R" gate="A" pin="5"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="A0" class="0">
 <segment>
 <label x="45.72" y="66.04" size="1.778" layer="95"/>
-<pinref part="JP2" gate="A" pin="1"/>
+<pinref part="MCU-L" gate="A" pin="1"/>
 <wire x1="45.72" y1="66.04" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="JP2" gate="A" pin="6"/>
+<pinref part="MCU-L" gate="A" pin="6"/>
 <wire x1="58.42" y1="53.34" x2="45.72" y2="53.34" width="0.1524" layer="91"/>
 <label x="45.72" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
-<pinref part="JP2" gate="A" pin="5"/>
+<pinref part="MCU-L" gate="A" pin="5"/>
 <wire x1="45.72" y1="55.88" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
 <label x="45.72" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX" class="0">
 <segment>
-<pinref part="JP2" gate="A" pin="7"/>
+<pinref part="MCU-L" gate="A" pin="7"/>
 <wire x1="58.42" y1="50.8" x2="45.72" y2="50.8" width="0.1524" layer="91"/>
 <label x="45.72" y="50.8" size="1.778" layer="95"/>
 </segment>
@@ -788,14 +788,14 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <segment>
 <wire x1="35.56" y1="50.8" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
 <label x="20.32" y="50.8" size="1.778" layer="95"/>
-<pinref part="JP4" gate="A" pin="1"/>
+<pinref part="MCU-R" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="VCC" class="1">
 <segment>
 <wire x1="35.56" y1="66.04" x2="17.78" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="66.04" x2="17.78" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="A" pin="7"/>
+<pinref part="MCU-R" gate="A" pin="7"/>
 <label x="22.86" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
