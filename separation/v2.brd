@@ -190,31 +190,31 @@
 <plain>
 <text x="87.2998" y="64.8208" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="center"></text>
 <circle x="0" y="0" radius="38" width="0.254" layer="49"/>
-<wire x1="-8.89" y1="16.129" x2="-8.89" y2="31.75" width="0.254" layer="21"/>
-<wire x1="-8.89" y1="31.75" x2="-6.35" y2="34.29" width="0.254" layer="21" curve="-90"/>
-<wire x1="-6.35" y1="34.29" x2="6.35" y2="34.29" width="0.254" layer="21"/>
-<wire x1="6.35" y1="34.29" x2="8.89" y2="31.75" width="0.254" layer="21" curve="-90"/>
-<wire x1="8.89" y1="31.75" x2="8.89" y2="16.129" width="0.254" layer="21"/>
-<wire x1="8.89" y1="16.129" x2="6.35" y2="13.589" width="0.254" layer="21" curve="-90"/>
-<wire x1="6.35" y1="13.589" x2="-6.35" y2="13.589" width="0.254" layer="21"/>
-<wire x1="-6.35" y1="13.589" x2="-8.89" y2="16.129" width="0.254" layer="21" curve="-90"/>
+<wire x1="-10.16" y1="13.589" x2="-10.16" y2="29.21" width="0.254" layer="21"/>
+<wire x1="-10.16" y1="29.21" x2="-7.62" y2="31.75" width="0.254" layer="21" curve="-90"/>
+<wire x1="-7.62" y1="31.75" x2="5.08" y2="31.75" width="0.254" layer="21"/>
+<wire x1="5.08" y1="31.75" x2="7.62" y2="29.21" width="0.254" layer="21" curve="-90"/>
+<wire x1="7.62" y1="29.21" x2="7.62" y2="13.589" width="0.254" layer="21"/>
+<wire x1="7.62" y1="13.589" x2="5.08" y2="11.049" width="0.254" layer="21" curve="-90"/>
+<wire x1="5.08" y1="11.049" x2="-7.62" y2="11.049" width="0.254" layer="21"/>
+<wire x1="-7.62" y1="11.049" x2="-10.16" y2="13.589" width="0.254" layer="21" curve="-90"/>
 <text x="64.4398" y="16.5608" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="center"></text>
-<wire x1="7.62" y1="16.256" x2="9.398" y2="16.256" width="1.524" layer="29"/>
-<wire x1="7.62" y1="18.923" x2="9.398" y2="18.923" width="1.524" layer="29"/>
-<wire x1="7.62" y1="21.463" x2="7.747" y2="21.336" width="1.524" layer="29"/>
-<wire x1="7.62" y1="26.416" x2="7.747" y2="26.543" width="1.524" layer="29"/>
-<wire x1="7.747" y1="26.543" x2="9.398" y2="26.543" width="1.524" layer="29"/>
-<wire x1="7.62" y1="21.463" x2="9.398" y2="21.463" width="1.524" layer="29"/>
-<wire x1="7.62" y1="24.003" x2="9.398" y2="24.003" width="1.524" layer="29"/>
-<wire x1="7.62" y1="29.083" x2="9.398" y2="29.083" width="1.524" layer="29"/>
-<wire x1="7.62" y1="31.623" x2="9.398" y2="31.623" width="1.524" layer="29"/>
-<wire x1="-7.62" y1="16.383" x2="-9.398" y2="16.383" width="1.524" layer="29"/>
-<wire x1="-7.62" y1="18.923" x2="-9.398" y2="18.923" width="1.524" layer="29"/>
-<wire x1="-7.62" y1="21.463" x2="-9.398" y2="21.463" width="1.524" layer="29"/>
-<wire x1="-7.62" y1="24.003" x2="-9.398" y2="24.003" width="1.524" layer="29"/>
-<wire x1="-7.62" y1="26.543" x2="-9.398" y2="26.543" width="1.524" layer="29"/>
-<wire x1="-7.62" y1="29.083" x2="-9.398" y2="29.083" width="1.524" layer="29"/>
-<wire x1="-7.62" y1="31.623" x2="-9.398" y2="31.623" width="1.524" layer="29"/>
+<wire x1="6.35" y1="13.716" x2="8.128" y2="13.716" width="1.524" layer="29"/>
+<wire x1="6.35" y1="16.383" x2="8.128" y2="16.383" width="1.524" layer="29"/>
+<wire x1="6.35" y1="18.923" x2="6.477" y2="18.796" width="1.524" layer="29"/>
+<wire x1="6.35" y1="23.876" x2="6.477" y2="24.003" width="1.524" layer="29"/>
+<wire x1="6.477" y1="24.003" x2="8.128" y2="24.003" width="1.524" layer="29"/>
+<wire x1="6.35" y1="18.923" x2="8.128" y2="18.923" width="1.524" layer="29"/>
+<wire x1="6.35" y1="21.463" x2="8.128" y2="21.463" width="1.524" layer="29"/>
+<wire x1="6.35" y1="26.543" x2="8.128" y2="26.543" width="1.524" layer="29"/>
+<wire x1="6.35" y1="29.083" x2="8.128" y2="29.083" width="1.524" layer="29"/>
+<wire x1="-8.89" y1="13.843" x2="-10.668" y2="13.843" width="1.524" layer="29"/>
+<wire x1="-8.89" y1="16.383" x2="-10.668" y2="16.383" width="1.524" layer="29"/>
+<wire x1="-8.89" y1="18.923" x2="-10.668" y2="18.923" width="1.524" layer="29"/>
+<wire x1="-8.89" y1="21.463" x2="-10.668" y2="21.463" width="1.524" layer="29"/>
+<wire x1="-8.89" y1="24.003" x2="-10.668" y2="24.003" width="1.524" layer="29"/>
+<wire x1="-8.89" y1="26.543" x2="-10.668" y2="26.543" width="1.524" layer="29"/>
+<wire x1="-8.89" y1="29.083" x2="-10.668" y2="29.083" width="1.524" layer="29"/>
 </plain>
 <libraries>
 <library name="microbuilder">
@@ -1640,50 +1640,50 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="MCU-L" library="microbuilder" package="1X07_OVAL" value="" x="7.62" y="23.9395" smashed="yes" rot="R90">
-<attribute name="VALUE" x="10.795" y="15.0495" size="0.4064" layer="27" ratio="10" rot="R90"/>
+<element name="MCU-L" library="microbuilder" package="1X07_OVAL" value="" x="6.35" y="21.3995" smashed="yes" rot="R90">
+<attribute name="VALUE" x="9.525" y="12.5095" size="0.4064" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="MCU-R" library="microbuilder" package="1X07_OVAL" value="" x="-7.62" y="23.9395" smashed="yes" rot="R270">
-<attribute name="VALUE" x="-10.795" y="32.8295" size="0.4064" layer="27" ratio="10" rot="R270"/>
+<element name="MCU-R" library="microbuilder" package="1X07_OVAL" value="" x="-8.89" y="21.3995" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-12.065" y="30.2895" size="0.4064" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="LOUD" library="SamacSys_Parts" package="CAPPRD400W70D900H500" package3d_urn="urn:adsk.eagle:package:34276129/2" value="KSTG931AP" x="-16.51" y="29.21" smashed="yes" rot="R270">
-<attribute name="DESCRIPTION" value="RS PRO 4V Electromagnetic Buzzer, 92dB" x="-16.51" y="29.21" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
-<attribute name="HEIGHT" value="5mm" x="-16.51" y="29.21" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="RS Components" x="-16.51" y="29.21" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="KSTG931AP" x="-16.51" y="29.21" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
-<attribute name="RS_PART_NUMBER" value="" x="-16.51" y="29.21" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
-<attribute name="RS_PRICE-STOCK" value="" x="-16.51" y="29.21" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<element name="LOUD" library="SamacSys_Parts" package="CAPPRD400W70D900H500" package3d_urn="urn:adsk.eagle:package:34276129/2" value="KSTG931AP" x="-17.78" y="26.67" smashed="yes" rot="R270">
+<attribute name="DESCRIPTION" value="RS PRO 4V Electromagnetic Buzzer, 92dB" x="-17.78" y="26.67" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="HEIGHT" value="5mm" x="-17.78" y="26.67" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="RS Components" x="-17.78" y="26.67" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="KSTG931AP" x="-17.78" y="26.67" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="-17.78" y="26.67" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="RS_PRICE-STOCK" value="" x="-17.78" y="26.67" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 </element>
-<element name="LDO" library="SamacSys_Parts" package="TO255P460X1020X2008-3P" package3d_urn="urn:adsk.eagle:package:34276127/2" value="L7805ACV" x="-13.97" y="19.558" smashed="yes" rot="R180">
-<attribute name="ALLIED_NUMBER" value="70013701" x="-13.97" y="19.558" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-<attribute name="DESCRIPTION" value="Linear voltage regulator,L7805ACV 5V 1A STMicroelectronics L7805ACV, Single Linear Voltage Regulator, 1A 5 V, 2%, 3-Pin TO-220" x="-13.97" y="19.558" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-<attribute name="HEIGHT" value="4.6mm" x="-13.97" y="19.558" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="STMicroelectronics" x="-13.97" y="19.558" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="L7805ACV" x="-13.97" y="19.558" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-<attribute name="RS_PART_NUMBER" value="2988508P" x="-13.97" y="19.558" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-<attribute name="RS_PRICE-STOCK" value="http://uk.rs-online.com/web/p/products/2988508P" x="-13.97" y="19.558" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
+<element name="LDO" library="SamacSys_Parts" package="TO255P460X1020X2008-3P" package3d_urn="urn:adsk.eagle:package:34276127/2" value="L7805ACV" x="-15.24" y="17.018" smashed="yes" rot="R180">
+<attribute name="ALLIED_NUMBER" value="70013701" x="-15.24" y="17.018" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="Linear voltage regulator,L7805ACV 5V 1A STMicroelectronics L7805ACV, Single Linear Voltage Regulator, 1A 5 V, 2%, 3-Pin TO-220" x="-15.24" y="17.018" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="4.6mm" x="-15.24" y="17.018" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="STMicroelectronics" x="-15.24" y="17.018" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="L7805ACV" x="-15.24" y="17.018" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
+<attribute name="RS_PART_NUMBER" value="2988508P" x="-15.24" y="17.018" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
+<attribute name="RS_PRICE-STOCK" value="http://uk.rs-online.com/web/p/products/2988508P" x="-15.24" y="17.018" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 </element>
-<element name="BAT" library="SamacSys_Parts" package="MB332350M02SZ" value="MB332-350M02SZ" x="15.367" y="21.971" smashed="yes" rot="R90">
-<attribute name="DESCRIPTION" value="RS PRO 3.5mm Pitch Straight, PCB Terminal Block, Through Hole, 2 Way" x="15.367" y="21.971" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
-<attribute name="HEIGHT" value="12.76mm" x="15.367" y="21.971" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="RS Components" x="15.367" y="21.971" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="MB332-350M02SZ" x="15.367" y="21.971" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
-<attribute name="RS_PART_NUMBER" value="7901149" x="15.367" y="21.971" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
-<attribute name="RS_PRICE-STOCK" value="https://uk.rs-online.com/web/p/products/7901149" x="15.367" y="21.971" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<element name="BAT" library="SamacSys_Parts" package="MB332350M02SZ" value="MB332-350M02SZ" x="14.097" y="19.431" smashed="yes" rot="R90">
+<attribute name="DESCRIPTION" value="RS PRO 3.5mm Pitch Straight, PCB Terminal Block, Through Hole, 2 Way" x="14.097" y="19.431" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="HEIGHT" value="12.76mm" x="14.097" y="19.431" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="RS Components" x="14.097" y="19.431" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="MB332-350M02SZ" x="14.097" y="19.431" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="RS_PART_NUMBER" value="7901149" x="14.097" y="19.431" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="RS_PRICE-STOCK" value="https://uk.rs-online.com/web/p/products/7901149" x="14.097" y="19.431" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 </element>
-<element name="SERCON" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="" x="15.24" y="16.51" smashed="yes" rot="R180">
-<attribute name="POPULARITY" value="92" x="15.24" y="16.51" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-<attribute name="VALUE" x="19.05" y="19.685" size="1.27" layer="27" rot="R180"/>
+<element name="SERCON" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03" package3d_urn="urn:adsk.eagle:package:22458/2" value="" x="13.97" y="13.97" smashed="yes" rot="R180">
+<attribute name="POPULARITY" value="92" x="13.97" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
+<attribute name="VALUE" x="17.78" y="17.145" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="0204V" package3d_urn="urn:adsk.eagle:package:23495/1" value="220k" x="15.367" y="30.861" smashed="yes" rot="R90">
-<attribute name="POPULARITY" value="11" x="15.367" y="30.861" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="15.367" y="30.861" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
-<attribute name="VALUE" x="20.2946" y="29.8196" size="0.9906" layer="27" ratio="10" rot="R180"/>
+<element name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="0204V" package3d_urn="urn:adsk.eagle:package:23495/1" value="220k" x="14.097" y="28.321" smashed="yes" rot="R90">
+<attribute name="POPULARITY" value="11" x="14.097" y="28.321" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="14.097" y="28.321" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="VALUE" x="19.0246" y="27.2796" size="0.9906" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="0204V" package3d_urn="urn:adsk.eagle:package:23495/1" value="120k" x="12.573" y="30.861" smashed="yes" rot="R270">
-<attribute name="POPULARITY" value="11" x="12.573" y="30.861" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="12.573" y="30.861" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
-<attribute name="VALUE" x="9.4234" y="33.6804" size="0.9906" layer="27" ratio="10"/>
+<element name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="0204V" package3d_urn="urn:adsk.eagle:package:23495/1" value="120k" x="11.303" y="28.321" smashed="yes" rot="R270">
+<attribute name="POPULARITY" value="11" x="11.303" y="28.321" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="11.303" y="28.321" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="VALUE" x="8.1534" y="31.1404" size="0.9906" layer="27" ratio="10"/>
 </element>
 </elements>
 <signals>
@@ -1700,11 +1700,11 @@ design rules under a new name.</description>
 <contactref element="LDO" pad="2"/>
 <contactref element="LOUD" pad="2"/>
 <contactref element="R2" pad="2"/>
-<wire x1="15.24" y1="16.51" x2="15.367" y2="25.471" width="0" layer="19" extent="1-1"/>
-<wire x1="-16.52" y1="19.558" x2="15.24" y2="16.51" width="0" layer="19" extent="1-1"/>
-<wire x1="-16.51" y1="25.21" x2="-16.52" y2="19.558" width="0" layer="19" extent="1-1"/>
-<wire x1="12.573" y1="29.591" x2="-16.51" y2="25.21" width="0" layer="19" extent="1-1"/>
-<wire x1="-7.62" y1="18.8595" x2="12.573" y2="29.591" width="0" layer="19" extent="1-1"/>
+<wire x1="13.97" y1="13.97" x2="14.097" y2="22.931" width="0" layer="19" extent="1-1"/>
+<wire x1="-17.79" y1="17.018" x2="13.97" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="-17.78" y1="22.67" x2="-17.79" y2="17.018" width="0" layer="19" extent="1-1"/>
+<wire x1="11.303" y1="27.051" x2="-17.78" y2="22.67" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.89" y1="16.3195" x2="11.303" y2="27.051" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="MCU-R" pad="4"/>
@@ -1727,7 +1727,10 @@ design rules under a new name.</description>
 <signal name="VCC" class="1">
 <contactref element="MCU-R" pad="7"/>
 <contactref element="LDO" pad="3"/>
-<wire x1="-7.62" y1="16.3195" x2="-19.07" y2="19.558" width="0" layer="19" extent="1-1"/>
+<wire x1="-20.34" y1="17.018" x2="-20.32" y2="16.998" width="0.508" layer="16" curve="-90"/>
+<wire x1="-20.32" y1="16.998" x2="-20.32" y2="15.24" width="0.508" layer="16"/>
+<wire x1="-20.32" y1="15.24" x2="-18.8595" y2="13.7795" width="0.508" layer="16" curve="90"/>
+<wire x1="-18.8595" y1="13.7795" x2="-8.89" y2="13.7795" width="0.508" layer="16"/>
 </signal>
 <signal name="+3V3">
 <contactref element="MCU-R" pad="5"/>
@@ -1749,26 +1752,41 @@ design rules under a new name.</description>
 <contactref element="BAT" pad="1"/>
 <contactref element="LDO" pad="1"/>
 <contactref element="R1" pad="1"/>
-<wire x1="17.78" y1="16.51" x2="15.367" y2="21.971" width="0" layer="19" extent="1-1"/>
-<wire x1="-13.97" y1="19.558" x2="17.78" y2="16.51" width="0" layer="19" extent="1-1"/>
-<wire x1="15.367" y1="29.591" x2="-13.97" y2="19.558" width="0" layer="19" extent="1-1"/>
+<wire x1="16.51" y1="13.97" x2="14.097" y2="19.431" width="0" layer="19" extent="1-1"/>
+<wire x1="-15.24" y1="17.018" x2="16.51" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="14.097" y1="27.051" x2="-15.24" y2="17.018" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SERVO">
 <contactref element="SERCON" pad="3"/>
 <contactref element="MCU-L" pad="2"/>
-<wire x1="7.62" y1="18.8595" x2="12.7" y2="16.51" width="0" layer="19" extent="1-1"/>
+<wire x1="6.35" y1="16.3195" x2="10.9855" y2="16.3195" width="0.508" layer="1"/>
+<wire x1="10.9855" y1="16.3195" x2="11.43" y2="15.875" width="0.508" layer="1"/>
+<wire x1="11.43" y1="15.875" x2="11.43" y2="13.97" width="0.508" layer="1"/>
 </signal>
 <signal name="BUZZ">
 <contactref element="LOUD" pad="1"/>
 <contactref element="MCU-L" pad="1"/>
-<wire x1="-16.51" y1="29.21" x2="7.62" y2="16.3195" width="0" layer="19" extent="1-1"/>
+<wire x1="6.35" y1="13.7795" x2="7.8105" y2="13.7795" width="0.254" layer="1"/>
+<wire x1="7.8105" y1="13.7795" x2="8.89" y2="12.7" width="0.254" layer="1" curve="-90"/>
+<wire x1="8.89" y1="12.7" x2="8.89" y2="11.811" width="0.254" layer="1"/>
+<wire x1="8.89" y1="11.811" x2="8.128" y2="11.049" width="0.254" layer="1" curve="-90"/>
+<wire x1="-10.795" y1="11.049" x2="-13.335" y2="13.589" width="0.254" layer="1" curve="-90"/>
+<wire x1="-13.335" y1="24.13" x2="-15.875" y2="26.67" width="0.254" layer="1" curve="90"/>
+<wire x1="-15.875" y1="26.67" x2="-17.78" y2="26.67" width="0.254" layer="1"/>
+<wire x1="8.128" y1="11.049" x2="-10.795" y2="11.049" width="0.254" layer="1"/>
+<wire x1="-13.335" y1="13.589" x2="-13.335" y2="24.13" width="0.254" layer="1"/>
 </signal>
 <signal name="VSENSE">
 <contactref element="R1" pad="2"/>
 <contactref element="R2" pad="1"/>
 <contactref element="MCU-L" pad="3"/>
-<wire x1="12.573" y1="32.131" x2="15.367" y2="32.131" width="0" layer="19" extent="1-1"/>
-<wire x1="7.62" y1="21.3995" x2="12.573" y2="32.131" width="0" layer="19" extent="1-1"/>
+<wire x1="11.303" y1="29.591" x2="14.097" y2="29.591" width="1.016" layer="1"/>
+<wire x1="11.303" y1="29.591" x2="10.414" y2="29.591" width="0.254" layer="1"/>
+<wire x1="10.414" y1="29.591" x2="9.652" y2="28.829" width="0.254" layer="1" curve="90"/>
+<wire x1="9.652" y1="19.812" x2="8.89" y2="19.05" width="0.254" layer="1" curve="-90"/>
+<wire x1="8.89" y1="19.05" x2="6.5405" y2="19.05" width="0.254" layer="1"/>
+<wire x1="6.5405" y1="19.05" x2="6.35" y2="18.8595" width="0.254" layer="1" curve="90"/>
+<wire x1="9.652" y1="28.829" x2="9.652" y2="19.812" width="0.254" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
