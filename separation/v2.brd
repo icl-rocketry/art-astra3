@@ -637,7 +637,13 @@ design rules under a new name.</description>
 <signal name="GND" class="1">
 <contactref element="MCU-R" pad="6"/>
 <contactref element="SERCON" pad="2"/>
-<wire x1="7.62" y1="29.4005" x2="-46.99" y2="-58.42" width="0" layer="19" extent="1-1"/>
+<contactref element="BAT" pad="2"/>
+<contactref element="LDO" pad="2"/>
+<contactref element="LOUD" pad="2"/>
+<wire x1="-42.22" y1="-48.26" x2="-46.99" y2="-58.42" width="0" layer="19" extent="1-1"/>
+<wire x1="-31.74" y1="-52.07" x2="-42.22" y2="-48.26" width="0" layer="19" extent="1-1"/>
+<wire x1="-29.02" y1="-43.18" x2="-31.74" y2="-52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="29.4005" x2="-29.02" y2="-43.18" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="A0">
 <contactref element="MCU-L" pad="1"/>

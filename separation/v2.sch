@@ -799,6 +799,9 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <part name="BAT" library="SamacSys_Parts" deviceset="MB332-350M02SZ" device=""/>
 <part name="SERCON" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -838,6 +841,15 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <instance part="GND2" gate="1" x="-25.4" y="38.1" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="-27.94" y="35.56" size="1.778" layer="96" rot="MR90"/>
 </instance>
+<instance part="GND3" gate="1" x="-27.94" y="7.62" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="-30.48" y="5.08" size="1.778" layer="96" rot="MR90"/>
+</instance>
+<instance part="GND4" gate="1" x="43.18" y="-12.7" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="45.72" y="-15.24" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND5" gate="1" x="106.68" y="35.56" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="104.14" y="33.02" size="1.778" layer="96" rot="MR90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -852,6 +864,21 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <pinref part="SERCON" gate="A" pin="2"/>
 <wire x1="-7.62" y1="38.1" x2="-22.86" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="BAT" gate="G$1" pin="2"/>
+<wire x1="-25.4" y1="7.62" x2="-15.24" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND4" gate="1" pin="GND"/>
+<pinref part="LDO" gate="G$1" pin="GND"/>
+<wire x1="43.18" y1="-10.16" x2="43.18" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND5" gate="1" pin="GND"/>
+<pinref part="LOUD" gate="G$1" pin="-"/>
+<wire x1="109.22" y1="35.56" x2="119.38" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
