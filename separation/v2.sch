@@ -470,12 +470,59 @@
 <circle x="2" y="0" radius="4.5" width="0.2" layer="25"/>
 <circle x="2" y="0" radius="4.5" width="0.1" layer="51"/>
 </package>
+<package name="TO255P460X1020X2008-3P" urn="urn:adsk.eagle:footprint:34276116/1">
+<description>&lt;b&gt;3-Pin TO-220&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="1.32" diameter="1.98" shape="square"/>
+<pad name="2" x="2.55" y="0" drill="1.32" diameter="1.98"/>
+<pad name="3" x="5.1" y="0" drill="1.32" diameter="1.98"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-2.9" y1="3.32" x2="8" y2="3.32" width="0.05" layer="51"/>
+<wire x1="8" y1="3.32" x2="8" y2="-1.78" width="0.05" layer="51"/>
+<wire x1="8" y1="-1.78" x2="-2.9" y2="-1.78" width="0.05" layer="51"/>
+<wire x1="-2.9" y1="-1.78" x2="-2.9" y2="3.32" width="0.05" layer="51"/>
+<wire x1="-2.65" y1="3.07" x2="7.75" y2="3.07" width="0.1" layer="51"/>
+<wire x1="7.75" y1="3.07" x2="7.75" y2="-1.53" width="0.1" layer="51"/>
+<wire x1="7.75" y1="-1.53" x2="-2.65" y2="-1.53" width="0.1" layer="51"/>
+<wire x1="-2.65" y1="-1.53" x2="-2.65" y2="3.07" width="0.1" layer="51"/>
+<wire x1="-2.65" y1="1.795" x2="-1.375" y2="3.07" width="0.1" layer="51"/>
+<wire x1="7.75" y1="-1.53" x2="7.75" y2="3.07" width="0.2" layer="21"/>
+<wire x1="7.75" y1="3.07" x2="-2.65" y2="3.07" width="0.2" layer="21"/>
+<wire x1="-2.65" y1="3.07" x2="-2.65" y2="0" width="0.2" layer="21"/>
+</package>
+<package name="MB332350M02SZ">
+<description>&lt;b&gt;MB332-350M02SZ-2&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="1.3" diameter="1.95"/>
+<pad name="2" x="3.5" y="0" drill="1.3" diameter="1.95"/>
+<text x="1.75" y="-0.1" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="1.75" y="-0.1" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.75" y1="3.5" x2="5.25" y2="3.5" width="0.1" layer="51"/>
+<wire x1="5.25" y1="3.5" x2="5.25" y2="-3.7" width="0.1" layer="51"/>
+<wire x1="5.25" y1="-3.7" x2="-1.75" y2="-3.7" width="0.1" layer="51"/>
+<wire x1="-1.75" y1="-3.7" x2="-1.75" y2="3.5" width="0.1" layer="51"/>
+<wire x1="-1.75" y1="3.5" x2="5.25" y2="3.5" width="0.2" layer="21"/>
+<wire x1="5.25" y1="3.5" x2="5.25" y2="-3.7" width="0.2" layer="21"/>
+<wire x1="5.25" y1="-3.7" x2="-1.75" y2="-3.7" width="0.2" layer="21"/>
+<wire x1="-1.75" y1="-3.7" x2="-1.75" y2="3.5" width="0.2" layer="21"/>
+<wire x1="-2.75" y1="4.5" x2="6.25" y2="4.5" width="0.1" layer="51"/>
+<wire x1="6.25" y1="4.5" x2="6.25" y2="-4.7" width="0.1" layer="51"/>
+<wire x1="6.25" y1="-4.7" x2="-2.75" y2="-4.7" width="0.1" layer="51"/>
+<wire x1="-2.75" y1="-4.7" x2="-2.75" y2="4.5" width="0.1" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="CAPPRD400W70D900H500" urn="urn:adsk.eagle:package:34276129/2" type="model">
 <description>&lt;b&gt;PCB Mount Buzzer&lt;/b&gt;&lt;br&gt;</description>
 <packageinstances>
 <packageinstance name="CAPPRD400W70D900H500"/>
+</packageinstances>
+</package3d>
+<package3d name="TO255P460X1020X2008-3P" urn="urn:adsk.eagle:package:34276127/2" type="model">
+<description>&lt;b&gt;3-Pin TO-220&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="TO255P460X1020X2008-3P"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -489,6 +536,27 @@
 <text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
 <pin name="+" x="0" y="0" length="middle"/>
 <pin name="-" x="0" y="-2.54" length="middle"/>
+</symbol>
+<symbol name="L7805ACV" urn="urn:adsk.eagle:symbol:34276121/1">
+<wire x1="-2.54" y1="20.32" x2="7.62" y2="20.32" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="20.32" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="20.32" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<text x="8.89" y="25.4" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="8.89" y="22.86" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="INPUT" x="0" y="0" length="middle" rot="R90"/>
+<pin name="GND" x="2.54" y="0" length="middle" rot="R90"/>
+<pin name="OUTPUT" x="5.08" y="0" length="middle" rot="R90"/>
+</symbol>
+<symbol name="MB332-350M02SZ">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" length="middle"/>
+<pin name="2" x="0" y="-2.54" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -520,6 +588,61 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="L7805ACV" urn="urn:adsk.eagle:component:34276132/2" prefix="IC">
+<description>&lt;b&gt;Linear voltage regulator,L7805ACV 5V 1A STMicroelectronics L7805ACV, Single Linear Voltage Regulator, 1A 5 V, 2%, 3-Pin TO-220&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://uk.rs-online.com/web/p/products/2988508P"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="L7805ACV" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO255P460X1020X2008-3P">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="INPUT" pad="1"/>
+<connect gate="G$1" pin="OUTPUT" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:34276127/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="ALLIED_NUMBER" value="70013701" constant="no"/>
+<attribute name="DESCRIPTION" value="Linear voltage regulator,L7805ACV 5V 1A STMicroelectronics L7805ACV, Single Linear Voltage Regulator, 1A 5 V, 2%, 3-Pin TO-220" constant="no"/>
+<attribute name="HEIGHT" value="4.6mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="STMicroelectronics" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="L7805ACV" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="2988508P" constant="no"/>
+<attribute name="RS_PRICE-STOCK" value="http://uk.rs-online.com/web/p/products/2988508P" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MB332-350M02SZ" prefix="J">
+<description>&lt;b&gt;RS PRO 3.5mm Pitch Straight, PCB Terminal Block, Through Hole, 2 Way&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MB332-350M02SZ" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MB332350M02SZ">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="RS PRO 3.5mm Pitch Straight, PCB Terminal Block, Through Hole, 2 Way" constant="no"/>
+<attribute name="HEIGHT" value="12.76mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="RS Components" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="MB332-350M02SZ" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="7901149" constant="no"/>
+<attribute name="RS_PRICE-STOCK" value="https://uk.rs-online.com/web/p/products/7901149" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -538,7 +661,9 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP4" library="microbuilder" deviceset="HEADER-1X7" device=""/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="LS1" library="SamacSys_Parts" deviceset="KSTG931AP" device="" package3d_urn="urn:adsk.eagle:package:34276129/2"/>
+<part name="LOUD" library="SamacSys_Parts" deviceset="KSTG931AP" device="" package3d_urn="urn:adsk.eagle:package:34276129/2"/>
+<part name="LDO" library="SamacSys_Parts" deviceset="L7805ACV" device="" package3d_urn="urn:adsk.eagle:package:34276127/2"/>
+<part name="BAT" library="SamacSys_Parts" deviceset="MB332-350M02SZ" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -559,9 +684,17 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <instance part="+3V1" gate="G$1" x="15.24" y="60.96" smashed="yes" rot="R90">
 <attribute name="VALUE" x="20.32" y="58.42" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="LS1" gate="G$1" x="119.38" y="38.1" smashed="yes">
+<instance part="LOUD" gate="G$1" x="119.38" y="38.1" smashed="yes">
 <attribute name="NAME" x="135.89" y="45.72" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="135.89" y="43.18" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="LDO" gate="G$1" x="40.64" y="-2.54" smashed="yes">
+<attribute name="NAME" x="49.53" y="22.86" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="49.53" y="20.32" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="BAT" gate="G$1" x="-15.24" y="10.16" smashed="yes">
+<attribute name="NAME" x="1.27" y="17.78" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="1.27" y="15.24" size="1.778" layer="96" align="center-left"/>
 </instance>
 </instances>
 <busses>
