@@ -189,7 +189,6 @@
 <board>
 <plain>
 <text x="87.2998" y="64.8208" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="center"></text>
-<circle x="0" y="0" radius="38" width="0.254" layer="49"/>
 <wire x1="-10.16" y1="13.589" x2="-10.16" y2="29.21" width="0.254" layer="21"/>
 <wire x1="-10.16" y1="29.21" x2="-7.62" y2="31.75" width="0.254" layer="21" curve="-90"/>
 <wire x1="-7.62" y1="31.75" x2="5.08" y2="31.75" width="0.254" layer="21"/>
@@ -1708,7 +1707,7 @@ design rules under a new name.</description>
 <contactref element="LDO" pad="2"/>
 <contactref element="LOUD" pad="2"/>
 <contactref element="R2" pad="2"/>
-<polygon width="0.508" layer="16" isolate="0.508" orphans="yes">
+<polygon width="0.508" layer="16" isolate="0.508">
 <vertex x="-26.67" y="7.62"/>
 <vertex x="-26.67" y="35.56"/>
 <vertex x="21.59" y="35.56"/>
@@ -1757,12 +1756,12 @@ design rules under a new name.</description>
 <contactref element="BAT" pad="1"/>
 <contactref element="LDO" pad="1"/>
 <contactref element="R1" pad="1"/>
-<polygon width="0.508" layer="1" isolate="0.508" orphans="yes">
-<vertex x="-26.67" y="7.62"/>
-<vertex x="21.59" y="7.62"/>
-<vertex x="21.59" y="35.56"/>
-<vertex x="-25.4" y="35.56"/>
-<vertex x="-26.67" y="34.29"/>
+<polygon width="0.508" layer="1" isolate="0.508">
+<vertex x="-27.94" y="38.1"/>
+<vertex x="24.13" y="38.1"/>
+<vertex x="24.13" y="5.08"/>
+<vertex x="-29.21" y="5.08"/>
+<vertex x="-29.21" y="38.1"/>
 </polygon>
 <wire x1="-20.32" y1="14.732" x2="13.716" y2="17.907" width="0" layer="19" extent="1-1"/>
 </signal>
