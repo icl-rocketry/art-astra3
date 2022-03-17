@@ -1717,9 +1717,6 @@ design rules under a new name.</description>
 <signal name="MOSI">
 <contactref element="MCU-R" pad="4"/>
 </signal>
-<signal name="MISO">
-<contactref element="MCU-R" pad="3"/>
-</signal>
 <signal name="SCK">
 <contactref element="MCU-R" pad="2"/>
 </signal>
@@ -1774,7 +1771,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="BUZZ">
 <contactref element="LOUD" pad="1"/>
-<contactref element="MCU-L" pad="1"/>
 <wire x1="-13.335" y1="13.589" x2="-10.795" y2="11.049" width="0.254" layer="1" curve="90"/>
 <wire x1="-13.335" y1="24.13" x2="-15.875" y2="26.67" width="0.254" layer="1" curve="90"/>
 <wire x1="-15.875" y1="26.67" x2="-17.78" y2="26.67" width="0.254" layer="1"/>
@@ -1783,7 +1779,8 @@ design rules under a new name.</description>
 <wire x1="-2.54" y1="11.049" x2="5.969" y2="11.049" width="0.254" layer="1"/>
 <wire x1="5.969" y1="11.049" x2="7.62" y2="12.7" width="0.254" layer="1" curve="90"/>
 <wire x1="7.62" y1="12.7" x2="6.5405" y2="13.7795" width="0.254" layer="1" curve="90"/>
-<wire x1="6.5405" y1="13.7795" x2="6.35" y2="13.7795" width="0.254" layer="1"/>
+<contactref element="MCU-R" pad="3"/>
+<wire x1="-17.78" y1="26.67" x2="-8.89" y2="23.9395" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VSENSE">
 <contactref element="R1" pad="2"/>
@@ -1795,6 +1792,9 @@ design rules under a new name.</description>
 <wire x1="9.398" y1="19.05" x2="6.5405" y2="19.05" width="0.254" layer="1"/>
 <wire x1="6.5405" y1="19.05" x2="6.35" y2="18.8595" width="0.254" layer="1" curve="90"/>
 <wire x1="9.398" y1="27.813" x2="9.398" y2="19.05" width="0.254" layer="1"/>
+</signal>
+<signal name="A0">
+<contactref element="MCU-L" pad="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

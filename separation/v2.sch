@@ -514,13 +514,15 @@
 </packages>
 <packages3d>
 <package3d name="CAPPRD400W70D900H500" urn="urn:adsk.eagle:package:34276129/2" type="model">
-<description>&lt;b&gt;PCB Mount Buzzer&lt;/b&gt;&lt;br&gt;</description>
+<description>&lt;b&gt;PCB Mount Buzzer&lt;/b&gt;&lt;br&gt;
+</description>
 <packageinstances>
 <packageinstance name="CAPPRD400W70D900H500"/>
 </packageinstances>
 </package3d>
 <package3d name="TO255P460X1020X2008-3P" urn="urn:adsk.eagle:package:34276127/2" type="model">
-<description>&lt;b&gt;3-Pin TO-220&lt;/b&gt;&lt;br&gt;</description>
+<description>&lt;b&gt;3-Pin TO-220&lt;/b&gt;&lt;br&gt;
+</description>
 <packageinstances>
 <packageinstance name="TO255P460X1020X2008-3P"/>
 </packageinstances>
@@ -5434,13 +5436,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="MCU-R" gate="A" pin="4"/>
 </segment>
 </net>
-<net name="MISO" class="0">
-<segment>
-<wire x1="35.56" y1="55.88" x2="17.78" y2="55.88" width="0.1524" layer="91"/>
-<label x="20.32" y="55.88" size="1.778" layer="95"/>
-<pinref part="MCU-R" gate="A" pin="3"/>
-</segment>
-</net>
 <net name="SCK" class="0">
 <segment>
 <wire x1="35.56" y1="53.34" x2="17.78" y2="53.34" width="0.1524" layer="91"/>
@@ -5551,9 +5546,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="116.84" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="45.72" y="66.04" size="1.778" layer="95"/>
-<pinref part="MCU-L" gate="A" pin="1"/>
-<wire x1="45.72" y1="66.04" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="55.88" x2="17.78" y2="55.88" width="0.1524" layer="91"/>
+<label x="20.32" y="55.88" size="1.778" layer="95"/>
+<pinref part="MCU-R" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="VSENSE" class="0">
@@ -5570,6 +5565,13 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="45.72" y="60.96" size="1.778" layer="95"/>
 <pinref part="MCU-L" gate="A" pin="3"/>
 <wire x1="45.72" y1="60.96" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="A0" class="0">
+<segment>
+<label x="45.72" y="66.04" size="1.778" layer="95"/>
+<pinref part="MCU-L" gate="A" pin="1"/>
+<wire x1="45.72" y1="66.04" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
