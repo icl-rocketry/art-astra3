@@ -3255,6 +3255,27 @@ RX</text>
 <text x="-19.812" y="7.747" size="2.54" layer="22" font="vector" rot="MR90">+</text>
 <text x="-20.447" y="11.303" size="2.54" layer="22" font="vector" rot="MR90">-</text>
 <text x="-18.415" y="7.747" size="2.54" layer="30" font="vector" rot="MR90">+</text>
+<text x="-12.7" y="14.732" size="0.508" layer="21" font="vector">VSENSE
+SERVO</text>
+<text x="-18.542" y="20.574" size="0.8382" layer="21" font="vector">SCL</text>
+<text x="-18.669" y="14.224" size="0.8382" layer="21" font="vector">SDA</text>
+<text x="12.192" y="7.366" size="0.8382" layer="21" font="vector">BUZZ</text>
+<text x="12.7" y="12.954" size="0.8382" layer="21" font="vector" rot="R90">VBAT</text>
+<text x="12.7" y="16.256" size="0.8382" layer="21" font="vector" rot="R90">GND</text>
+<text x="12.7" y="19.05" size="0.8382" layer="21" font="vector" rot="R90">VCC</text>
+<text x="-17.018" y="20.574" size="0.8382" layer="22" font="vector" rot="MR0">SCL</text>
+<text x="-16.637" y="14.224" size="0.8382" layer="22" font="vector" rot="MR0">SDA</text>
+<text x="-16.51" y="0.889" size="0.8382" layer="22" font="vector" rot="MR0">GND</text>
+<text x="-13.589" y="5.334" size="0.8382" layer="22" font="vector" rot="MR0">VBAT</text>
+<text x="-10.414" y="0.889" size="0.8382" layer="22" font="vector" rot="MR0">SERVO</text>
+<text x="-3.175" y="22.352" size="0.8382" layer="22" font="vector" rot="MR0">VSENSE</text>
+<text x="16.51" y="1.27" size="0.8382" layer="22" font="vector" rot="MR0">BUZZ</text>
+<text x="12.7" y="15.494" size="0.8382" layer="22" font="vector" rot="MR270">VBAT</text>
+<text x="12.7" y="18.288" size="0.8382" layer="22" font="vector" rot="MR270">GND</text>
+<text x="12.7" y="20.828" size="0.8382" layer="22" font="vector" rot="MR270">VCC</text>
+<text x="16.383" y="22.352" size="0.8382" layer="22" font="vector" rot="MR180">VCC</text>
+<text x="18.796" y="16.256" size="0.8382" layer="22" font="vector" rot="MR90">GND</text>
+<text x="16.51" y="21.59" size="0.8382" layer="21" font="vector">VCC</text>
 </plain>
 <libraries>
 <library name="microbuilder">
