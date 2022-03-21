@@ -3285,7 +3285,6 @@ SERVO</text>
 <text x="2.794" y="17.78" size="0.5588" layer="22" font="vector" ratio="12" rot="MR0">Shreya Ramteke</text>
 <text x="2.54" y="7.62" size="0.5588" layer="22" font="vector" ratio="12" rot="MR0">Akshat Tripathi</text>
 <text x="2.159" y="6.223" size="0.5588" layer="22" font="vector" ratio="12" rot="MR0">David Cormier</text>
-<text x="10.16" y="22.86" size="1.778" layer="29" font="vector" ratio="12">ART</text>
 <text x="-5.715" y="21.463" size="0.508" layer="22" font="vector" ratio="12" rot="MR0">VSENSE</text>
 <text x="-3.048" y="4.572" size="0.635" layer="21" font="vector" ratio="12">Shrey Bohra
 Rohit Singh
@@ -4871,11 +4870,18 @@ design rules under a new name.</description>
 <contactref element="JP1" pad="1"/>
 <wire x1="17.653" y1="17.399" x2="14.468" y2="17.399" width="0.508" layer="1"/>
 <wire x1="14.468" y1="17.399" x2="14.224" y2="17.155" width="0.508" layer="1"/>
-<wire x1="9.398" y1="17.907" x2="14.224" y2="17.155" width="0" layer="19" extent="1-1"/>
-<wire x1="17.335" y1="6.35" x2="17.653" y2="17.399" width="0" layer="19" extent="1-1"/>
-<wire x1="-12.319" y1="19.685" x2="7.62" y2="17.9705" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.113" y1="12.136" x2="-12.319" y2="19.685" width="0" layer="19" extent="1-1"/>
-<wire x1="-17.526" y1="3.556" x2="-15.113" y2="12.136" width="0" layer="19" extent="1-1"/>
+<polygon width="0.254" layer="16" isolate="0.254">
+<vertex x="-22.86" y="-2.54"/>
+<vertex x="20.32" y="-2.54"/>
+<vertex x="22.86" y="0"/>
+<vertex x="22.86" y="25.4"/>
+<vertex x="20.32" y="27.94"/>
+<vertex x="-20.32" y="27.94"/>
+<vertex x="-24.13" y="24.13"/>
+<vertex x="-24.13" y="21.59"/>
+<vertex x="-24.13" y="1.27"/>
+<vertex x="-24.13" y="-1.27"/>
+</polygon>
 </signal>
 <signal name="MOSI">
 <contactref element="MCU-R" pad="4"/>
@@ -4909,9 +4915,9 @@ design rules under a new name.</description>
 <contactref element="JP3" pad="1"/>
 <wire x1="-11.6205" y1="7.8105" x2="-7.62" y2="7.8105" width="0.254" layer="16"/>
 <wire x1="-13.97" y1="10.16" x2="-11.6205" y2="7.8105" width="0.254" layer="16"/>
-<wire x1="-17.78" y1="16.51" x2="-17.78" y2="11.43" width="0.254" layer="16"/>
-<wire x1="-17.78" y1="11.43" x2="-16.51" y2="10.16" width="0.254" layer="16"/>
-<wire x1="-16.51" y1="10.16" x2="-13.97" y2="10.16" width="0.254" layer="16"/>
+<wire x1="-17.78" y1="11.43" x2="-17.78" y2="16.51" width="0.254" layer="16"/>
+<wire x1="-13.97" y1="10.16" x2="-16.51" y2="10.16" width="0.254" layer="16"/>
+<wire x1="-16.51" y1="10.16" x2="-17.78" y2="11.43" width="0.254" layer="16"/>
 </signal>
 <signal name="VCC" class="1">
 <contactref element="MCU-R" pad="7"/>
@@ -4952,8 +4958,15 @@ design rules under a new name.</description>
 <contactref element="SERCON" pad="2"/>
 <wire x1="-14.986" y1="3.556" x2="-14.986" y2="8.509" width="2.032" layer="16"/>
 <wire x1="-14.986" y1="8.509" x2="-15.113" y2="8.636" width="2.032" layer="16"/>
-<wire x1="-15.113" y1="8.636" x2="14.224" y2="14.605" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.113" y1="19.685" x2="-15.113" y2="8.636" width="0" layer="19" extent="1-1"/>
+<polygon width="0.254" layer="1" isolate="0.254">
+<vertex x="-21.59" y="27.94"/>
+<vertex x="21.59" y="27.94"/>
+<vertex x="22.86" y="26.67"/>
+<vertex x="22.86" y="-2.54"/>
+<vertex x="-22.86" y="-2.54"/>
+<vertex x="-24.13" y="-1.27"/>
+<vertex x="-24.13" y="25.4"/>
+</polygon>
 </signal>
 <signal name="SERVO">
 <contactref element="SERCON" pad="3"/>
