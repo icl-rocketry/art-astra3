@@ -3252,7 +3252,7 @@ RX</text>
 <text x="-13.716" y="0.889" size="0.8382" layer="21" font="vector">SERVO</text>
 <text x="-18.288" y="7.62" size="2.54" layer="21" font="vector">+</text>
 <text x="-18.415" y="11.303" size="2.54" layer="21" font="vector" rot="R90">-</text>
-<text x="-19.812" y="7.747" size="2.54" layer="22" font="vector" rot="MR90">+</text>
+<text x="-20.193" y="7.747" size="2.54" layer="22" font="vector" rot="MR90">+</text>
 <text x="-20.447" y="11.303" size="2.54" layer="22" font="vector" rot="MR90">-</text>
 <text x="-18.415" y="7.747" size="2.54" layer="30" font="vector" rot="MR90">+</text>
 <text x="-12.7" y="14.732" size="0.508" layer="21" font="vector">VSENSE
@@ -3268,7 +3268,6 @@ SERVO</text>
 <text x="-16.51" y="0.889" size="0.8382" layer="22" font="vector" rot="MR0">GND</text>
 <text x="-13.589" y="5.334" size="0.8382" layer="22" font="vector" rot="MR0">VBAT</text>
 <text x="-10.414" y="0.889" size="0.8382" layer="22" font="vector" rot="MR0">SERVO</text>
-<text x="-3.175" y="22.352" size="0.8382" layer="22" font="vector" rot="MR0">VSENSE</text>
 <text x="16.51" y="1.27" size="0.8382" layer="22" font="vector" rot="MR0">BUZZ</text>
 <text x="12.7" y="15.494" size="0.8382" layer="22" font="vector" rot="MR270">VBAT</text>
 <text x="12.7" y="18.288" size="0.8382" layer="22" font="vector" rot="MR270">GND</text>
@@ -3276,6 +3275,37 @@ SERVO</text>
 <text x="16.383" y="22.352" size="0.8382" layer="22" font="vector" rot="MR180">VCC</text>
 <text x="18.796" y="16.256" size="0.8382" layer="22" font="vector" rot="MR90">GND</text>
 <text x="16.51" y="21.59" size="0.8382" layer="21" font="vector">VCC</text>
+<text x="6.35" y="22.86" size="1.27" layer="22" font="vector" ratio="12" rot="MR0">ART Separation</text>
+<text x="-4.318" y="3.048" size="0.8382" layer="21" font="vector">STEMMA this end</text>
+<text x="-3.81" y="21.844" size="0.8382" layer="21" font="vector">USB C This end</text>
+<text x="11.43" y="1.27" size="1.016" layer="22" font="vector" ratio="12" rot="MR0">ASTRA Designed by ART@ICLR</text>
+<text x="2.54" y="21.59" size="0.635" layer="22" font="vector" ratio="12" rot="MR0">Designed by</text>
+<text x="2.54" y="20.32" size="0.635" layer="22" font="vector" ratio="12" rot="MR0">Shrey Bohra</text>
+<text x="3.81" y="19.05" size="0.635" layer="22" font="vector" ratio="12" rot="MR0">Hrithik Parmessur</text>
+<text x="2.794" y="17.78" size="0.5588" layer="22" font="vector" ratio="12" rot="MR0">Shreya Ramteke</text>
+<text x="2.54" y="7.62" size="0.5588" layer="22" font="vector" ratio="12" rot="MR0">Akshat Tripathi</text>
+<text x="2.159" y="6.223" size="0.5588" layer="22" font="vector" ratio="12" rot="MR0">David Cormier</text>
+<text x="10.16" y="22.86" size="1.778" layer="29" font="vector" ratio="12">ART</text>
+<text x="-5.715" y="21.463" size="0.508" layer="22" font="vector" ratio="12" rot="MR0">VSENSE</text>
+<text x="-3.048" y="4.572" size="0.635" layer="21" font="vector" ratio="12">Shrey Bohra
+Rohit Singh
+Harry Allcock
+Caitlin Speight
+Shaheer Aamer
+Jack Osborn
+Akshat Tripathi
+Rohin Nayar
+David Cormier
+Shreya Ramteke
+Ruchit Tandon
+Julian Ting
+Frej Dunn
+Shahriar Alam
+Nathanael Jenkins
+Ishaan Alidina
+Ellie Hoggarth</text>
+<text x="-3.048" y="20.701" size="0.635" layer="21" font="vector" ratio="12">ART Team:</text>
+<text x="2.794" y="4.953" size="0.635" layer="22" font="vector" ratio="12" rot="MR0">Ruchit Tandon</text>
 </plain>
 <libraries>
 <library name="microbuilder">
@@ -4941,7 +4971,7 @@ design rules under a new name.</description>
 <wire x1="13.335" y1="8.255" x2="11.2395" y2="10.3505" width="0.508" layer="1"/>
 <wire x1="7.62" y1="10.3505" x2="9.398" y2="10.3505" width="1.524" layer="1"/>
 <contactref element="TP6" pad="TP"/>
-<wire x1="13.335" y1="6.35" x2="15.367" y2="4.318" width="0.254" layer="16"/>
+<wire x1="13.335" y1="6.35" x2="15.367" y2="4.318" width="1.016" layer="16"/>
 <wire x1="15.367" y1="4.318" x2="15.367" y2="3.937" width="0.254" layer="16"/>
 </signal>
 <signal name="VSENSE">
