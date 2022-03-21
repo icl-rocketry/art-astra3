@@ -3286,7 +3286,7 @@ SERVO</text>
 <text x="2.54" y="7.62" size="0.5588" layer="22" font="vector" ratio="12" rot="MR0">Akshat Tripathi</text>
 <text x="2.159" y="6.223" size="0.5588" layer="22" font="vector" ratio="12" rot="MR0">David Cormier</text>
 <text x="-5.715" y="21.463" size="0.508" layer="22" font="vector" ratio="12" rot="MR0">VSENSE</text>
-<text x="-3.048" y="4.572" size="0.635" layer="21" font="vector" ratio="12">Shrey Bohra
+<text x="-3.429" y="4.191" size="0.635" layer="21" font="vector" ratio="12">Shrey Bohra
 Rohit Singh
 Harry Allcock
 Caitlin Speight
@@ -3295,6 +3295,7 @@ Jack Osborn
 Akshat Tripathi
 Rohin Nayar
 David Cormier
+Hrithik Parmessur
 Shreya Ramteke
 Ruchit Tandon
 Julian Ting
@@ -3303,7 +3304,6 @@ Shahriar Alam
 Nathanael Jenkins
 Ishaan Alidina
 Ellie Hoggarth</text>
-<text x="-3.048" y="20.701" size="0.635" layer="21" font="vector" ratio="12">ART Team:</text>
 <text x="2.794" y="4.953" size="0.635" layer="22" font="vector" ratio="12" rot="MR0">Ruchit Tandon</text>
 </plain>
 <libraries>
@@ -4881,7 +4881,7 @@ Everything else you will find on https://aisler.net/help</description>
 <element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="330nF" x="-14.859" y="18.161" smashed="yes" rot="R90">
 <attribute name="POPULARITY" value="56" x="-14.859" y="18.161" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="-14.859" y="18.161" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-16.274053125" y="20.691978125" size="0.635" layer="27" font="vector" ratio="10"/>
+<attribute name="VALUE" x="-16.274053125" y="20.691978125" size="0.635" layer="21" font="vector" ratio="10"/>
 </element>
 </elements>
 <signals>
@@ -4901,8 +4901,8 @@ Everything else you will find on https://aisler.net/help</description>
 <wire x1="9.3345" y1="17.9705" x2="9.398" y2="17.907" width="1.524" layer="1"/>
 <contactref element="LDO" pad="2"/>
 <contactref element="JP1" pad="1"/>
-<wire x1="17.653" y1="17.399" x2="14.468" y2="17.399" width="0.508" layer="1"/>
-<wire x1="14.468" y1="17.399" x2="14.224" y2="17.155" width="0.508" layer="1"/>
+<wire x1="17.653" y1="17.399" x2="14.468" y2="17.399" width="1.016" layer="1"/>
+<wire x1="14.468" y1="17.399" x2="14.224" y2="17.155" width="1.016" layer="1"/>
 <polygon width="0.254" layer="16" isolate="0.254">
 <vertex x="-22.86" y="-2.54"/>
 <vertex x="20.32" y="-2.54"/>
@@ -4917,6 +4917,13 @@ Everything else you will find on https://aisler.net/help</description>
 </polygon>
 <contactref element="C1" pad="1"/>
 <contactref element="C2" pad="1"/>
+<wire x1="9.398" y1="17.907" x2="14.224" y2="17.155" width="0" layer="19" extent="1-1"/>
+<wire x1="17.335" y1="6.35" x2="17.653" y2="17.399" width="0" layer="19" extent="1-1"/>
+<wire x1="9.915025" y1="3.184025" x2="17.335" y2="6.35" width="0" layer="19" extent="1-1"/>
+<wire x1="-12.192" y1="16.891" x2="7.62" y2="17.9705" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.859" y1="16.891" x2="-12.192" y2="16.891" width="0" layer="19" extent="1-1"/>
+<wire x1="-15.113" y1="12.136" x2="-14.859" y2="16.891" width="0" layer="19" extent="1-1"/>
+<wire x1="-17.526" y1="3.556" x2="-15.113" y2="12.136" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="MCU-R" pad="4"/>
@@ -4938,36 +4945,36 @@ Everything else you will find on https://aisler.net/help</description>
 <wire x1="-7.62" y1="10.3505" x2="-9.3345" y2="10.3505" width="1.524" layer="1"/>
 <wire x1="-9.3345" y1="10.3505" x2="-9.398" y2="10.287" width="1.524" layer="1"/>
 <contactref element="JP2" pad="1"/>
-<wire x1="-17.78" y1="19.05" x2="-16.51" y2="17.78" width="0.254" layer="16"/>
-<wire x1="-16.51" y1="17.78" x2="-16.51" y2="16.51" width="0.254" layer="16"/>
-<wire x1="-10.3505" y1="10.3505" x2="-7.62" y2="10.3505" width="0.254" layer="16"/>
-<wire x1="-16.51" y1="16.51" x2="-10.3505" y2="10.3505" width="0.254" layer="16"/>
+<wire x1="-17.78" y1="19.05" x2="-16.51" y2="17.78" width="0.508" layer="16"/>
+<wire x1="-16.51" y1="17.78" x2="-16.51" y2="16.51" width="0.508" layer="16"/>
+<wire x1="-10.3505" y1="10.3505" x2="-7.62" y2="10.3505" width="0.508" layer="16"/>
+<wire x1="-16.51" y1="16.51" x2="-10.3505" y2="10.3505" width="0.508" layer="16"/>
 </signal>
 <signal name="SCL">
 <contactref element="MCU-L" pad="6"/>
 <wire x1="-7.62" y1="7.8105" x2="-9.3345" y2="7.8105" width="1.524" layer="1"/>
 <wire x1="-9.3345" y1="7.8105" x2="-9.398" y2="7.747" width="1.524" layer="1"/>
 <contactref element="JP3" pad="1"/>
-<wire x1="-11.6205" y1="7.8105" x2="-7.62" y2="7.8105" width="0.254" layer="16"/>
-<wire x1="-13.97" y1="10.16" x2="-11.6205" y2="7.8105" width="0.254" layer="16"/>
-<wire x1="-17.78" y1="11.43" x2="-17.78" y2="16.51" width="0.254" layer="16"/>
-<wire x1="-13.97" y1="10.16" x2="-16.51" y2="10.16" width="0.254" layer="16"/>
-<wire x1="-16.51" y1="10.16" x2="-17.78" y2="11.43" width="0.254" layer="16"/>
+<wire x1="-11.6205" y1="7.8105" x2="-7.62" y2="7.8105" width="0.508" layer="16"/>
+<wire x1="-13.97" y1="10.16" x2="-11.6205" y2="7.8105" width="0.508" layer="16"/>
+<wire x1="-17.78" y1="11.43" x2="-17.78" y2="16.51" width="0.508" layer="16"/>
+<wire x1="-13.97" y1="10.16" x2="-16.51" y2="10.16" width="0.508" layer="16"/>
+<wire x1="-16.51" y1="10.16" x2="-17.78" y2="11.43" width="0.508" layer="16"/>
 </signal>
 <signal name="VCC" class="1">
 <contactref element="MCU-R" pad="7"/>
 <contactref element="LDO" pad="3"/>
 <contactref element="JP4" pad="1"/>
-<wire x1="17.653" y1="19.939" x2="14.458" y2="19.939" width="0.508" layer="1"/>
+<wire x1="17.653" y1="19.939" x2="14.458" y2="19.939" width="1.016" layer="1"/>
 <wire x1="14.458" y1="19.939" x2="14.224" y2="19.705" width="0.508" layer="1"/>
 <wire x1="13.4185" y1="20.5105" x2="14.224" y2="19.705" width="1.524" layer="1"/>
 <wire x1="7.62" y1="20.5105" x2="13.4185" y2="20.5105" width="1.524" layer="1"/>
 <contactref element="C1" pad="2"/>
-<wire x1="-12.192" y1="20.828" x2="-10.16" y2="22.86" width="0.3048" layer="1"/>
-<wire x1="-2.7305" y1="20.5105" x2="7.62" y2="20.5105" width="0.3048" layer="1"/>
-<wire x1="-12.192" y1="19.431" x2="-12.192" y2="20.828" width="0.3048" layer="1"/>
-<wire x1="-10.16" y1="22.86" x2="-5.08" y2="22.86" width="0.3048" layer="1"/>
-<wire x1="-5.08" y1="22.86" x2="-2.7305" y2="20.5105" width="0.3048" layer="1"/>
+<wire x1="7.62" y1="20.5105" x2="4.8895" y2="20.5105" width="0.508" layer="1"/>
+<wire x1="-12.192" y1="20.32" x2="-12.192" y2="19.431" width="0.508" layer="1"/>
+<wire x1="4.8895" y1="20.5105" x2="2.54" y2="22.86" width="0.508" layer="1"/>
+<wire x1="2.54" y1="22.86" x2="-9.652" y2="22.86" width="0.508" layer="1"/>
+<wire x1="-9.652" y1="22.86" x2="-12.192" y2="20.32" width="0.508" layer="1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="MCU-R" pad="5"/>
@@ -5034,10 +5041,10 @@ Everything else you will find on https://aisler.net/help</description>
 <contactref element="MCU-L" pad="2"/>
 <wire x1="-7.62" y1="17.9705" x2="-9.398" y2="17.9705" width="1.524" layer="1"/>
 <contactref element="TP2" pad="TP"/>
-<wire x1="-9.271" y1="22.987" x2="-6.477" y2="22.987" width="0.254" layer="16"/>
-<wire x1="-6.477" y1="22.987" x2="-5.08" y2="21.59" width="0.254" layer="16"/>
-<wire x1="-5.08" y1="21.59" x2="-5.08" y2="19.05" width="0.254" layer="16"/>
-<wire x1="-5.08" y1="19.05" x2="-6.35" y2="17.78" width="0.254" layer="16"/>
+<wire x1="-9.271" y1="22.987" x2="-6.477" y2="22.987" width="0.508" layer="16"/>
+<wire x1="-6.477" y1="22.987" x2="-5.08" y2="21.59" width="0.508" layer="16"/>
+<wire x1="-5.08" y1="21.59" x2="-5.08" y2="19.05" width="0.508" layer="16"/>
+<wire x1="-5.08" y1="19.05" x2="-6.35" y2="17.78" width="0.508" layer="16"/>
 <wire x1="-6.35" y1="17.78" x2="-7.4295" y2="17.78" width="0.254" layer="16"/>
 <wire x1="-7.4295" y1="17.78" x2="-7.62" y2="17.9705" width="0.254" layer="16"/>
 <wire x1="-7.864971875" y1="1.387971875" x2="-3.81" y2="1.387971875" width="0.508" layer="1"/>
