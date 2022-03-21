@@ -5369,8 +5369,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="NAME" x="-11.43" y="43.815" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-11.43" y="30.48" size="1.778" layer="96"/>
 </instance>
-<instance part="GND2" gate="1" x="-25.4" y="38.1" smashed="yes" rot="MR90">
-<attribute name="VALUE" x="-27.94" y="35.56" size="1.778" layer="96" rot="MR90"/>
+<instance part="GND2" gate="1" x="-17.78" y="48.26" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="-20.32" y="50.8" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="GND3" gate="1" x="-27.94" y="7.62" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="-30.48" y="5.08" size="1.778" layer="96" rot="MR90"/>
@@ -5403,11 +5403,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="MCU-R" gate="A" pin="6"/>
 </segment>
 <segment>
-<pinref part="SERCON" gate="A" pin="2"/>
-<wire x1="-7.62" y1="38.1" x2="-22.86" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="GND3" gate="1" pin="GND"/>
 <pinref part="BAT" gate="G$1" pin="2"/>
 <wire x1="-25.4" y1="7.62" x2="-15.24" y2="7.62" width="0.1524" layer="91"/>
@@ -5427,6 +5422,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="5.08" y1="-7.62" x2="7.62" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SERCON" gate="A" pin="1"/>
+<wire x1="-7.62" y1="40.64" x2="-17.78" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="-17.78" y1="40.64" x2="-17.78" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -5501,12 +5502,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </net>
 <net name="VBAT" class="0">
 <segment>
-<pinref part="SERCON" gate="A" pin="1"/>
-<wire x1="-7.62" y1="40.64" x2="-17.78" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="40.64" x2="-17.78" y2="45.72" width="0.1524" layer="91"/>
-<label x="-25.4" y="43.18" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="BAT" gate="G$1" pin="1"/>
 <wire x1="-15.24" y1="10.16" x2="-20.32" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="10.16" x2="-20.32" y2="15.24" width="0.1524" layer="91"/>
@@ -5523,6 +5518,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="-25.4" y1="-7.62" x2="-27.94" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="-7.62" x2="-27.94" y2="-15.24" width="0.1524" layer="91"/>
 <label x="-35.56" y="-15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SERCON" gate="A" pin="2"/>
+<wire x1="-7.62" y1="38.1" x2="-27.94" y2="38.1" width="0.1524" layer="91"/>
+<label x="-33.02" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SERVO" class="0">
