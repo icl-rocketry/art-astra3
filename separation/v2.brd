@@ -4593,7 +4593,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <class number="1" name="power" width="0.3048" drill="0">
 </class>
 </classes>
-<designrules name="aisler_2_layer_simple">
+<designrules name="aisler_2_layer_simple *">
 <description language="de">&lt;b&gt;Aisler Design Rules -  2 Layers - simple&lt;/b&gt;
 
 &lt;p&gt;
@@ -4636,7 +4636,7 @@ Everything else you will find on https://aisler.net/help</description>
 <param name="rvMicroViaInner" value="0.25"/>
 <param name="rlMinPadTop" value="0.2mm"/>
 <param name="rlMaxPadTop" value="100mm"/>
-<param name="rlMinPadInner" value="0.2mm"/>
+<param name="rlMinPadInner" value="0.3mm"/>
 <param name="rlMaxPadInner" value="100mm"/>
 <param name="rlMinPadBottom" value="0.2mm"/>
 <param name="rlMaxPadBottom" value="100mm"/>
@@ -5011,6 +5011,17 @@ Everything else you will find on https://aisler.net/help</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="23,1,9e8d53e267b2f622"/>
+<approved hash="23,1,fb566ff9581493c6"/>
+<approved hash="23,1,900552d264baf7f8"/>
+<approved hash="23,1,f8866da95a2ee61e"/>
+<approved hash="23,1,f8d66fa1585082c6"/>
+<approved hash="23,1,9cdd5ab210aaffda"/>
+<approved hash="23,1,f1d66ff953d69106"/>
+<approved hash="23,1,58fc58ab66b63527"/>
+<approved hash="23,1,9e8d59626572fde0"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
