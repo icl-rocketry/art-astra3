@@ -4661,11 +4661,11 @@ Everything else you will find on https://aisler.net/help</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="0.2mm"/>
+<param name="rlMinPadTop" value="0.3mm"/>
 <param name="rlMaxPadTop" value="100mm"/>
 <param name="rlMinPadInner" value="0.3mm"/>
 <param name="rlMaxPadInner" value="100mm"/>
-<param name="rlMinPadBottom" value="0.2mm"/>
+<param name="rlMinPadBottom" value="0.3mm"/>
 <param name="rlMaxPadBottom" value="100mm"/>
 <param name="rlMinViaOuter" value="0.2mm"/>
 <param name="rlMaxViaOuter" value="100mm"/>
@@ -4917,13 +4917,6 @@ Everything else you will find on https://aisler.net/help</description>
 </polygon>
 <contactref element="C1" pad="1"/>
 <contactref element="C2" pad="1"/>
-<wire x1="9.398" y1="17.907" x2="14.224" y2="17.155" width="0" layer="19" extent="1-1"/>
-<wire x1="17.335" y1="6.35" x2="17.653" y2="17.399" width="0" layer="19" extent="1-1"/>
-<wire x1="9.915025" y1="3.184025" x2="17.335" y2="6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="-12.192" y1="16.891" x2="7.62" y2="17.9705" width="0" layer="19" extent="1-1"/>
-<wire x1="-14.859" y1="16.891" x2="-12.192" y2="16.891" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.113" y1="12.136" x2="-14.859" y2="16.891" width="0" layer="19" extent="1-1"/>
-<wire x1="-17.526" y1="3.556" x2="-15.113" y2="12.136" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="MCU-R" pad="4"/>
@@ -5076,6 +5069,7 @@ Everything else you will find on https://aisler.net/help</description>
 <approved hash="23,1,f1d66ff953d69106"/>
 <approved hash="23,1,58fc58ab66b63527"/>
 <approved hash="23,1,9e8d59626572fde0"/>
+<approved hash="23,1,3ffa6b0e646d3099"/>
 </errors>
 </board>
 </drawing>
