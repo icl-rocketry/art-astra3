@@ -1841,27 +1841,40 @@ Everything else you will find on https://aisler.net/help</description>
 <contactref element="R1" pad="1"/>
 <contactref element="SERCON" pad="2"/>
 <contactref element="C2" pad="2"/>
+<wire x1="-14.986" y1="3.556" x2="-14.986" y2="8.509" width="2.032" layer="16"/>
+<wire x1="-14.986" y1="8.509" x2="-15.113" y2="8.636" width="2.032" layer="16"/>
+<wire x1="-14.986" y1="3.556" x2="-14.986" y2="2.286" width="1.016" layer="16"/>
+<wire x1="-13.716" y1="1.016" x2="-11.684" y2="1.016" width="1.016" layer="16"/>
+<wire x1="-11.684" y1="1.016" x2="-9.661025" y2="3.038975" width="1.016" layer="16"/>
+<wire x1="-9.661025" y1="3.038975" x2="-9.661025" y2="3.184025" width="1.016" layer="16"/>
+<wire x1="-14.986" y1="2.286" x2="-13.716" y2="1.016" width="1.016" layer="16"/>
 <wire x1="-9.661025" y1="3.184025" x2="14.224" y2="14.605" width="0" layer="19" extent="1-1"/>
-<wire x1="-14.986" y1="3.556" x2="-9.661025" y2="3.184025" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.113" y1="8.636" x2="-14.986" y2="3.556" width="0" layer="19" extent="1-1"/>
 <wire x1="-14.859" y1="19.431" x2="-15.113" y2="8.636" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SERVO">
 <contactref element="SERCON" pad="3"/>
 <contactref element="MCU-L" pad="3"/>
-<wire x1="-7.62" y1="15.4305" x2="-12.446" y2="3.556" width="0" layer="19" extent="1-1"/>
+<wire x1="-12.446" y1="3.556" x2="-12.446" y2="13.208" width="1.016" layer="16"/>
+<wire x1="-12.446" y1="13.208" x2="-10.2235" y2="15.4305" width="1.016" layer="16"/>
+<wire x1="-10.2235" y1="15.4305" x2="-7.62" y2="15.4305" width="1.016" layer="16"/>
 </signal>
 <signal name="BUZZ">
 <contactref element="LOUD" pad="1"/>
 <contactref element="MCU-R" pad="3"/>
-<wire x1="13.335" y1="6.35" x2="7.62" y2="10.3505" width="0" layer="19" extent="1-1"/>
+<wire x1="13.335" y1="6.35" x2="13.335" y2="9.144" width="1.016" layer="16"/>
+<wire x1="13.335" y1="9.144" x2="12.1285" y2="10.3505" width="1.016" layer="16"/>
+<wire x1="12.1285" y1="10.3505" x2="7.62" y2="10.3505" width="1.016" layer="16"/>
 </signal>
 <signal name="VSENSE">
 <contactref element="R1" pad="2"/>
 <contactref element="R2" pad="1"/>
 <contactref element="MCU-L" pad="2"/>
-<wire x1="-7.864971875" y1="1.387971875" x2="-7.62" y2="17.9705" width="0" layer="19" extent="1-1"/>
-<wire x1="8.118971875" y1="1.387971875" x2="-7.864971875" y2="1.387971875" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.864971875" y1="1.387971875" x2="-6.232028125" y2="1.387971875" width="1.016" layer="16"/>
+<wire x1="-6.232028125" y1="1.387971875" x2="-3.81" y2="3.81" width="1.016" layer="16"/>
+<wire x1="-3.81" y1="3.81" x2="-3.81" y2="16.51" width="1.016" layer="16"/>
+<wire x1="-3.81" y1="16.51" x2="-5.2705" y2="17.9705" width="1.016" layer="16"/>
+<wire x1="-5.2705" y1="17.9705" x2="-7.62" y2="17.9705" width="1.016" layer="16"/>
+<wire x1="-6.232028125" y1="1.387971875" x2="8.118971875" y2="1.387971875" width="1.016" layer="16"/>
 </signal>
 <signal name="A0">
 <contactref element="MCU-L" pad="1"/>
