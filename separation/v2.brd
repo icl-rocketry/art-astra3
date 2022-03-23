@@ -3254,7 +3254,6 @@ RX</text>
 <text x="-18.415" y="11.303" size="2.54" layer="21" font="vector" rot="R90">-</text>
 <text x="-20.193" y="7.747" size="2.54" layer="22" font="vector" rot="MR90">+</text>
 <text x="-20.447" y="11.303" size="2.54" layer="22" font="vector" rot="MR90">-</text>
-<text x="-18.415" y="7.747" size="2.54" layer="30" font="vector" rot="MR90">+</text>
 <text x="-12.7" y="14.732" size="0.508" layer="21" font="vector">VSENSE
 SERVO</text>
 <text x="-18.542" y="20.574" size="0.8382" layer="21" font="vector">SCL</text>
@@ -3275,10 +3274,10 @@ SERVO</text>
 <text x="16.383" y="22.352" size="0.8382" layer="22" font="vector" rot="MR180">VCC</text>
 <text x="18.796" y="16.256" size="0.8382" layer="22" font="vector" rot="MR90">GND</text>
 <text x="16.51" y="21.59" size="0.8382" layer="21" font="vector">VCC</text>
-<text x="6.35" y="22.86" size="1.27" layer="22" font="vector" ratio="12" rot="MR0">ART Separation</text>
+<text x="6.35" y="1.27" size="1.27" layer="22" font="vector" ratio="12" rot="MR0">ART Separation</text>
 <text x="-4.318" y="3.048" size="0.8382" layer="21" font="vector">STEMMA this end</text>
 <text x="-3.81" y="21.844" size="0.8382" layer="21" font="vector">USB C This end</text>
-<text x="11.43" y="1.27" size="1.016" layer="22" font="vector" ratio="12" rot="MR0">ASTRA Designed by ART@ICLR</text>
+<text x="13.97" y="22.86" size="1.016" layer="22" font="vector" ratio="12" rot="MR0">ASTRA Designed by ART@ICLR</text>
 <text x="2.54" y="21.59" size="0.635" layer="22" font="vector" ratio="12" rot="MR0">Designed by</text>
 <text x="2.54" y="20.32" size="0.635" layer="22" font="vector" ratio="12" rot="MR0">Shrey Bohra</text>
 <text x="3.81" y="19.05" size="0.635" layer="22" font="vector" ratio="12" rot="MR0">Hrithik Parmessur</text>
