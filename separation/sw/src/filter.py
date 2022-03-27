@@ -4,13 +4,17 @@
 
 from collections import deque
 
+class Sensor:
+    def read(self) -> float:
+        raise NotImplementedError("Sensor not implemented")
+
 class FilteredPressureSensor:
     def __init__(self, bufferSize: int, sensor):
         self._bufferSize = bufferSize
         self._buffer = deque(maxlen=bufferSize)
         self._sensor = sensor
 
-    def read() -> float:
+    def read(self) -> float:
         self._buffer.append(self._sensor.read())
         mean = sum(self._buffer) / len(self._buffer)
         return mean
