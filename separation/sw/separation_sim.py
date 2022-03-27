@@ -37,10 +37,13 @@ class FakePressureSensor(Sensor):
         self._index = 0
 
     def read(self) -> float:
-        pressure = self._trajectory[self._index][1]
-        self._index += 1
+        try:
+            pressure = self._trajectory[self._index][1]
+            self._index += 1
 
-        return pressure
+            return pressure
+        except IndexError:
+            raise StopIteration
 
     def get_time(self) -> int:
         return self._trajectory[self._index][0]
@@ -52,7 +55,7 @@ class SensorConfig:
             self.outlier_probability = outlier_probability
             self.buffer_size = buffer_size
 
-    def __init__(self, trajectory_file: str, separation_threshold: float, sensors: list[SensorConfig.SensorConfigEntry]):
+    def __init__(self, trajectory_file: str, separation_threshold: float, sensors: list[SensorConfigEntry]):
         self.trajectory_file = trajectory_file
         self.separation_threshold = separation_threshold
         self.sensors = sensors
@@ -71,10 +74,26 @@ def test_separation(sensor_config: SensorConfig) -> bool:
 
     trigger = Trigger(filtered_sensors, sensor_config.separation_threshold)
 
-    while not trigger.canSeparate():
-        pass
+    try:
+        while not trigger.canSeparate():
+            pass
+    except StopIteration:
+        print("\u001b[31mNo separation\u001b[0m")
+        return False
 
     now = sensors[0].get_time()
     assert all(map(lambda s: s.get_time() == now, sensors))
 
     return now - apogee_time < TRIGGER_RANGE and now > apogee_time
+
+
+if __name__ == "__main__":
+    configs = [SensorConfig("astra2_data.csv", 1000, sensors=[
+        SensorConfig.SensorConfigEntry(100, 0.000001, 20),
+        SensorConfig.SensorConfigEntry(100, 0.000001, 30),
+        SensorConfig.SensorConfigEntry(100, 0.000001, 20),
+    ])]
+
+    for (i, config) in enumerate(configs):
+        if not test_separation(config):
+            print("\u001b[31mFailed test {}\u001b[0m".format(i))
