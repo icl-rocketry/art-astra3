@@ -4,22 +4,33 @@
 
 from .filter import FilteredPressureSensor # type: ignore
 
-UP = 1
-DOWN = 0
+UP = 0
+DOWN = 1
 
-class Trigger:
-    def __init__(self, sensors: list[FilteredPressureSensor], altitudeThreshold: float):
+class ApogeeTrigger:
+    def __init__(self, sensors: list[FilteredPressureSensor], threshold: int):
         self._sensors = sensors
-        self._thresh = altitudeThreshold #TODO: convert this to a pressure value
         self._old_readings = [0] * len(sensors)
+        self._threshold = threshold
+        self._down_combo = 0
+        self._up_combo = 0
+
 
     def canSeparate(self) -> bool:
         readings = [s.read() for s in self._sensors]
+        if readings == self._old_readings:
+            return False
 
-        votes = [int(new > old) for (new, old) in zip(readings, self._old_readings)] 
+        votes = [int(new >= old) for (new, old) in zip(readings, self._old_readings)] 
         winner = int(sum(votes) > 1)
 
-        masked_readings = [value for (vote, value) in zip(votes, readings) if vote == winner]
+        if winner == DOWN:
+            self._down_combo += 1
+            self._up_combo = 0
+        else:
+            self._up_combo += 1
+            self._down_combo = 0
+        # print(readings[0], self._up_combo, self._down_combo, sep=", ")
 
         self._old_readings = readings
-        return False
+        return self._down_combo >= self._threshold
