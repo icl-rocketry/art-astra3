@@ -2,7 +2,8 @@
 #Pipe the input in as a csv
 #Matplotlib is great :(
 
-import matplotlib.pyplot as plt  # type: ignore
+import matplotlib.pyplot as plt
+from pexpect import EOF  # type: ignore
 
 def plot(column: list[float]) -> None:
     x = list(range(len(column)))
@@ -12,12 +13,12 @@ def plot(column: list[float]) -> None:
 if __name__ == "__main__":
     line = ""
     lines = []
-    while True:
-        line = input()
-        if line != "END":
+    try:
+        while True:
+            line = input()
             lines.append(line)
-        else:
-            break
+    except EOFError:
+        pass
 
     data = [list(map(float, line.split(","))) for line in lines]
     columns: list[list[float]] = list(zip(*data)) #type: ignore
