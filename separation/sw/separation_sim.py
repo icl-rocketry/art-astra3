@@ -84,35 +84,35 @@ def test_separation(sensor_config: SensorConfig) -> tuple[bool, int]:
 
 if __name__ == "__main__":
     configs = [
-        SensorConfig("air-no-peturbation", "astra2_air.tsv", 10, sensors=[
+        SensorConfig("air-no-peturbation", "astra2_air.tsv", 4, sensors=[
             SensorConfig.SensorConfigEntry(0, 0, 20),
             SensorConfig.SensorConfigEntry(0, 0, 20),
             SensorConfig.SensorConfigEntry(0, 0, 20),
         ]),
-        SensorConfig("full-no-peturbation", "astra2_full.tsv", 10, sensors=[
+        SensorConfig("full-no-peturbation", "astra2_full.tsv", 12, sensors=[
             SensorConfig.SensorConfigEntry(0, 0, 20),
             SensorConfig.SensorConfigEntry(0, 0, 20),
             SensorConfig.SensorConfigEntry(0, 0, 20),
         ]),
-        SensorConfig("air-light-noise", "astra2_air.tsv", 10, sensors=[
-            SensorConfig.SensorConfigEntry(10, 0, 20),
-            SensorConfig.SensorConfigEntry(10, 0, 20),
-            SensorConfig.SensorConfigEntry(10, 0, 20),
+        SensorConfig("air-light-noise", "astra2_air.tsv", 12, sensors=[
+            SensorConfig.SensorConfigEntry(20, 0, 20),
+            SensorConfig.SensorConfigEntry(20, 0, 20),
+            SensorConfig.SensorConfigEntry(20, 0, 20),
         ]),
-        SensorConfig("full-light-noise", "astra2_full.tsv", 10, sensors=[
-            SensorConfig.SensorConfigEntry(10, 0, 20),
-            SensorConfig.SensorConfigEntry(10, 0, 20),
-            SensorConfig.SensorConfigEntry(10, 0, 20),
+        SensorConfig("full-light-noise", "astra2_full.tsv", 12, sensors=[
+            SensorConfig.SensorConfigEntry(20, 0, 20),
+            SensorConfig.SensorConfigEntry(20, 0, 20),
+            SensorConfig.SensorConfigEntry(20, 0, 20),
         ]),   
-        SensorConfig("air-light-noise+outliers", "astra2_air.tsv", 10, sensors=[
-            SensorConfig.SensorConfigEntry(10, 0.001, 20),
-            SensorConfig.SensorConfigEntry(10, 0.001, 20),
-            SensorConfig.SensorConfigEntry(10, 0.001, 20),
+        SensorConfig("air-light-noise+outliers", "astra2_air.tsv", 12, sensors=[
+            SensorConfig.SensorConfigEntry(20, 0.1, 20),
+            SensorConfig.SensorConfigEntry(20, 0.1, 20),
+            SensorConfig.SensorConfigEntry(20, 0.1, 20),
         ]),
-        SensorConfig("full-light-noise+outliers", "astra2_full.tsv", 10, sensors=[
-            SensorConfig.SensorConfigEntry(10, 0.001, 20),
-            SensorConfig.SensorConfigEntry(10, 0.001, 20),
-            SensorConfig.SensorConfigEntry(10, 0.001, 20),
+        SensorConfig("full-light-noise+outliers", "astra2_full.tsv", 12, sensors=[
+            SensorConfig.SensorConfigEntry(20, 0.1, 20),
+            SensorConfig.SensorConfigEntry(20, 0.1, 20),
+            SensorConfig.SensorConfigEntry(20, 0.1, 20),
         ]),   
     ]
     exitCode = 0
@@ -124,5 +124,6 @@ if __name__ == "__main__":
             exitCode += 1
         else:
             print(f"\u001b[32mPASSED test: {config.name :<40} SEPARATED {diff}ms {timing} apogee\u001b[0m")
+            ...
     exit(exitCode)
     
