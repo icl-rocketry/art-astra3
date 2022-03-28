@@ -16,5 +16,5 @@ class FilteredPressureSensor:
 
     def read(self) -> float:
         self._buffer.append(self._sensor.read())
-        mean = sum(self._buffer) / len(self._buffer)
-        return mean
+        median = sorted(self._buffer)[len(self._buffer) // 2] #Median filter to remove outliers
+        return median
