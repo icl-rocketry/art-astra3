@@ -49,10 +49,11 @@ class SensorConfig:
             self.outlier_probability = outlier_probability
             self.buffer_size = buffer_size
 
-    def __init__(self, name: str, trajectory_file: str, trigger_threshold: int, sensors: list[SensorConfigEntry]):
+    def __init__(self, name: str, trajectory_file: str, trigger_threshold: int, pressure_threshold: float, sensors: list[SensorConfigEntry]):
         self.name = name
         self.trajectory_file = trajectory_file
         self.trigger_threshold = trigger_threshold
+        self.pressure_threshold = pressure_threshold
         self.sensors = sensors
 
 def test_separation(sensor_config: SensorConfig) -> tuple[bool, int]:
@@ -67,7 +68,7 @@ def test_separation(sensor_config: SensorConfig) -> tuple[bool, int]:
         sensors.append(sensor)
         filtered_sensors.append(FilteredPressureSensor(sensor_cfg.buffer_size, sensor))
 
-    trigger = ApogeeTrigger(filtered_sensors, sensor_config.trigger_threshold)
+    trigger = ApogeeTrigger(filtered_sensors, sensor_config.trigger_threshold, sensor_config.pressure_threshold)
 
     try:
         while not trigger.canSeparate():
@@ -83,33 +84,34 @@ def test_separation(sensor_config: SensorConfig) -> tuple[bool, int]:
 
 
 if __name__ == "__main__":
+    PRESSURE_THRESHOLD = 100_000 # Pa
     configs = [
-        SensorConfig("air-no-peturbation", "astra2_air.tsv", 4, sensors=[
+        SensorConfig("air-no-peturbation", "astra2_air.tsv", 5, PRESSURE_THRESHOLD, sensors=[
             SensorConfig.SensorConfigEntry(0, 0, 20),
             SensorConfig.SensorConfigEntry(0, 0, 20),
             SensorConfig.SensorConfigEntry(0, 0, 20),
         ]),
-        SensorConfig("full-no-peturbation", "astra2_full.tsv", 12, sensors=[
+        SensorConfig("full-no-peturbation", "astra2_full.tsv", 5, PRESSURE_THRESHOLD, sensors=[
             SensorConfig.SensorConfigEntry(0, 0, 20),
             SensorConfig.SensorConfigEntry(0, 0, 20),
             SensorConfig.SensorConfigEntry(0, 0, 20),
         ]),
-        SensorConfig("air-light-noise", "astra2_air.tsv", 12, sensors=[
+        SensorConfig("air-light-noise", "astra2_air.tsv", 5, PRESSURE_THRESHOLD, sensors=[
             SensorConfig.SensorConfigEntry(20, 0, 20),
             SensorConfig.SensorConfigEntry(20, 0, 20),
             SensorConfig.SensorConfigEntry(20, 0, 20),
         ]),
-        SensorConfig("full-light-noise", "astra2_full.tsv", 12, sensors=[
+        SensorConfig("full-light-noise", "astra2_full.tsv", 5, PRESSURE_THRESHOLD, sensors=[
             SensorConfig.SensorConfigEntry(20, 0, 20),
             SensorConfig.SensorConfigEntry(20, 0, 20),
             SensorConfig.SensorConfigEntry(20, 0, 20),
         ]),   
-        SensorConfig("air-light-noise+outliers", "astra2_air.tsv", 12, sensors=[
+        SensorConfig("air-light-noise+outliers", "astra2_air.tsv", 5, PRESSURE_THRESHOLD, sensors=[
             SensorConfig.SensorConfigEntry(20, 0.1, 20),
             SensorConfig.SensorConfigEntry(20, 0.1, 20),
             SensorConfig.SensorConfigEntry(20, 0.1, 20),
         ]),
-        SensorConfig("full-light-noise+outliers", "astra2_full.tsv", 12, sensors=[
+        SensorConfig("full-light-noise+outliers", "astra2_full.tsv", 5, PRESSURE_THRESHOLD, sensors=[
             SensorConfig.SensorConfigEntry(20, 0.1, 20),
             SensorConfig.SensorConfigEntry(20, 0.1, 20),
             SensorConfig.SensorConfigEntry(20, 0.1, 20),
