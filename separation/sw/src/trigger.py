@@ -23,13 +23,13 @@ class ApogeeTrigger:
 
         votes = [int(new >= old)
                  for (new, old) in zip(readings, self._old_readings)]
-        winner = int(sum(votes) > 1)
+        winner = int(sum(votes) > 1) #This is broken
 
         if winner == DOWN:
             self._down_combo += 1
         else:
             self._down_combo = 0
-        # print(readings[0], self._up_combo, self._down_combo, sep=", ")
+        # print(readings[0], self._down_combo, sep=", ")
 
         self._old_readings = readings
         return self._down_combo >= self._threshold and all(map(lambda x: x < self._pressure_threshold, readings))

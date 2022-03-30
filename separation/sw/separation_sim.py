@@ -80,42 +80,73 @@ def test_separation(sensor_config: SensorConfig) -> tuple[bool, int]:
     now = sensors[0].get_time()
     assert all(map(lambda s: s.get_time() == now, sensors))
 
-    return now - apogee_time < TRIGGER_RANGE and now > apogee_time, now - apogee_time
+    return now - apogee_time < TRIGGER_RANGE and now >= apogee_time, now - apogee_time
 
 
 if __name__ == "__main__":
-    PRESSURE_THRESHOLD = 100_000 # Pa
+    PRESSURE_THRESHOLD_ASTRA2 = 100_000 # Pa
+    PRESSURE_THRESHOLD_ASTRA3 = 99_000 # Pa
     configs = [
-        SensorConfig("air-no-peturbation", "astra2_air.tsv", 5, PRESSURE_THRESHOLD, sensors=[
+        SensorConfig("air-no-peturbation", "astra2_air.tsv", 5, PRESSURE_THRESHOLD_ASTRA2, sensors=[
             SensorConfig.SensorConfigEntry(0, 0, 20),
             SensorConfig.SensorConfigEntry(0, 0, 20),
             SensorConfig.SensorConfigEntry(0, 0, 20),
         ]),
-        SensorConfig("full-no-peturbation", "astra2_full.tsv", 5, PRESSURE_THRESHOLD, sensors=[
+        SensorConfig("full-no-peturbation", "astra2_full.tsv", 5, PRESSURE_THRESHOLD_ASTRA2, sensors=[
             SensorConfig.SensorConfigEntry(0, 0, 20),
             SensorConfig.SensorConfigEntry(0, 0, 20),
             SensorConfig.SensorConfigEntry(0, 0, 20),
         ]),
-        SensorConfig("air-light-noise", "astra2_air.tsv", 5, PRESSURE_THRESHOLD, sensors=[
+        SensorConfig("vac-no-peturbation", "dps310.tsv", 5, PRESSURE_THRESHOLD_ASTRA3, sensors=[
+            SensorConfig.SensorConfigEntry(0, 0, 20),
+            SensorConfig.SensorConfigEntry(0, 0, 20),
+            SensorConfig.SensorConfigEntry(0, 0, 20),
+        ]),
+        SensorConfig("vac-no-peturbation-1", "dps310_1.tsv", 5, PRESSURE_THRESHOLD_ASTRA3, sensors=[
+            SensorConfig.SensorConfigEntry(0, 0, 20),
+            SensorConfig.SensorConfigEntry(0, 0, 20),
+            SensorConfig.SensorConfigEntry(0, 0, 20),
+        ]),
+        SensorConfig("air-light-noise", "astra2_air.tsv", 5, PRESSURE_THRESHOLD_ASTRA2, sensors=[
             SensorConfig.SensorConfigEntry(20, 0, 20),
             SensorConfig.SensorConfigEntry(20, 0, 20),
             SensorConfig.SensorConfigEntry(20, 0, 20),
         ]),
-        SensorConfig("full-light-noise", "astra2_full.tsv", 5, PRESSURE_THRESHOLD, sensors=[
+        SensorConfig("full-light-noise", "astra2_full.tsv", 5, PRESSURE_THRESHOLD_ASTRA2, sensors=[
             SensorConfig.SensorConfigEntry(20, 0, 20),
             SensorConfig.SensorConfigEntry(20, 0, 20),
             SensorConfig.SensorConfigEntry(20, 0, 20),
-        ]),   
-        SensorConfig("air-light-noise+outliers", "astra2_air.tsv", 5, PRESSURE_THRESHOLD, sensors=[
+        ]),
+        SensorConfig("vac-light-noise", "dps310.tsv", 5, PRESSURE_THRESHOLD_ASTRA3, sensors=[
+            SensorConfig.SensorConfigEntry(20, 0, 20),
+            SensorConfig.SensorConfigEntry(20, 0, 20),
+            SensorConfig.SensorConfigEntry(20, 0, 20),
+        ]),
+        SensorConfig("vac-light-noise-1", "dps310_1.tsv", 5, PRESSURE_THRESHOLD_ASTRA3, sensors=[
+            SensorConfig.SensorConfigEntry(20, 0, 20),
+            SensorConfig.SensorConfigEntry(20, 0, 20),
+            SensorConfig.SensorConfigEntry(20, 0, 20),
+        ]),
+        SensorConfig("air-light-noise+outliers", "astra2_air.tsv", 5, PRESSURE_THRESHOLD_ASTRA2, sensors=[
             SensorConfig.SensorConfigEntry(20, 0.1, 20),
             SensorConfig.SensorConfigEntry(20, 0.1, 20),
             SensorConfig.SensorConfigEntry(20, 0.1, 20),
         ]),
-        SensorConfig("full-light-noise+outliers", "astra2_full.tsv", 5, PRESSURE_THRESHOLD, sensors=[
+        SensorConfig("full-light-noise+outliers", "astra2_full.tsv", 5, PRESSURE_THRESHOLD_ASTRA2, sensors=[
             SensorConfig.SensorConfigEntry(20, 0.1, 20),
             SensorConfig.SensorConfigEntry(20, 0.1, 20),
             SensorConfig.SensorConfigEntry(20, 0.1, 20),
-        ]),   
+        ]),
+        SensorConfig("vac-light-noise+outliers", "dps310.tsv", 5, PRESSURE_THRESHOLD_ASTRA3, sensors=[
+            SensorConfig.SensorConfigEntry(20, 0.1, 20),
+            SensorConfig.SensorConfigEntry(20, 0.1, 20),
+            SensorConfig.SensorConfigEntry(20, 0.1, 20),
+        ]),
+        SensorConfig("vac-light-noise+outliers-1", "dps310_1.tsv", 5, PRESSURE_THRESHOLD_ASTRA3, sensors=[
+            SensorConfig.SensorConfigEntry(20, 0.1, 20),
+            SensorConfig.SensorConfigEntry(20, 0.1, 20),
+            SensorConfig.SensorConfigEntry(20, 0.1, 20),
+        ]),
     ]
     exitCode = 0
     for (i, config) in enumerate(configs):
