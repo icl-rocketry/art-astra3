@@ -1,5 +1,5 @@
 import random
-from src.filter import FilteredPressureSensor, Sensor  # type: ignore
+from src.fps import FilteredPressureSensor, Sensor  # type: ignore
 from src.trigger import ApogeeTrigger  # type: ignore
 
 TRIGGER_RANGE = 5000  # 5000 milliseconds is 5 seconds after apogee
@@ -7,7 +7,7 @@ TRIGGER_RANGE = 5000  # 5000 milliseconds is 5 seconds after apogee
 
 def read_file(filename: str = "astra2_data.csv") -> tuple[list[tuple[int, float]], int]:
     raw_data: list[tuple[int, float]] = []
-    with open(filename, "r") as file:
+    with open("test_data/"+filename, "r") as file:
         for line in file:
             time_str, pressure_str = line.split("\t")
             raw_data += [(int(time_str), float(pressure_str))]
@@ -30,7 +30,8 @@ class FakePressureSensor(Sensor):
         self._trajectory = trajectory
         self._index = 0
 
-    def read(self) -> float:
+    @property
+    def pressure(self) -> float:
         try:
             pressure = self._trajectory[self._index][1]
             self._index += 1
@@ -68,10 +69,11 @@ def test_separation(sensor_config: SensorConfig) -> tuple[bool, int]:
         sensors.append(sensor)
         filtered_sensors.append(FilteredPressureSensor(sensor_cfg.buffer_size, sensor))
 
-    trigger = ApogeeTrigger(filtered_sensors, sensor_config.trigger_threshold, sensor_config.pressure_threshold)
+    trigger = ApogeeTrigger(len(filtered_sensors), sensor_config.trigger_threshold, sensor_config.pressure_threshold)
 
     try:
-        while not trigger.canSeparate():
+        readings = [sensor.read() for sensor in filtered_sensors]
+        while not trigger.canSeparate(readings):
             pass
     except StopIteration:
         print("\u001b[31mNo separation\u001b[0m")
