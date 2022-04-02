@@ -1,3 +1,4 @@
 *.s#*
 *.b#*
 separation/sw/src/__pycache__
+copy
