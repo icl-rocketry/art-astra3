@@ -2,13 +2,15 @@
 # It has a canSeparate method which returns whether or not we can trigger separation.
 # We only trigger separation if we're below separation threshold, and we believe that the rocket is going down.
 
-from typing import List
+# from typing import List
 
 UP = 0
 DOWN = 1
 
 
 class ApogeeTrigger:
+    MOVEMENT_THRESHOLD = 10 #Only count a change if the values are more than 10 Pascals apart
+
     def __init__(self, n_sensors: int, threshold: int, pressure_threshold: float):
         self._old_readings = [0.0] * n_sensors
         self._threshold = threshold
@@ -16,9 +18,8 @@ class ApogeeTrigger:
         self._down_combo = 0
 
     def canSeparate(self, readings: List[float]) -> bool:
-        if readings == self._old_readings:
+        if all(abs(new - old) < self.MOVEMENT_THRESHOLD for (new, old) in zip(readings, self._old_readings)):
             return False
-
         votes = [int(new >= old)
                  for (new, old) in zip(readings, self._old_readings)]
         winner = int(sum(votes) > 1) #This is broken
