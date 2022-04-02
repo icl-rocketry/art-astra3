@@ -74,7 +74,7 @@ def test_separation(sensor_config: SensorConfig) -> tuple[bool, int]:
     try:
         readings = [sensor.read() for sensor in filtered_sensors]
         while not trigger.canSeparate(readings):
-            pass
+            readings = [sensor.read() for sensor in filtered_sensors]
     except StopIteration:
         print("\u001b[31mNo separation\u001b[0m")
         return False, 0
