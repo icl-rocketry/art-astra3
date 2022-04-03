@@ -1,9 +1,7 @@
 import time
-from typing import Optional
 import board
 from busio import I2C
 from fps import FilteredPressureSensor, Sensor
-
 from adafruit_dps310.advanced import DPS310_Advanced as DPS310
 from adafruit_dps310.advanced import Rate, Mode, SampleCount
 import adafruit_mpl3115a2
@@ -19,10 +17,10 @@ class state:
     def __init__(self, sensors):
         self.sensors = sensors
 
-    def _run(self) -> Optional[state]:
+    def _run(self) -> state | None:
         raise NotImplementedError()
     
-    def run(self) -> Optional[state]:
+    def run(self) -> state | None:
         pixel.fill(self.colour)
         try:
             return self._run()

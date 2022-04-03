@@ -5,7 +5,7 @@ SRC_PATH = ./separation/sw/src
 files = $(wildcard $(SRC_PATH)/*.py)
 
 check: $(files)
-	@mypy $(SRC_PATH)/
+	@mypy --python-version 3.10 $(SRC_PATH)/
 
 copy: $(files)
 	@echo $? | xargs -n 1 echo | xargs -I{} cp ./{} /mnt/astra3
