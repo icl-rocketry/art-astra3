@@ -3,8 +3,7 @@
 #During flight, the FilteredPressureSensor will take in a sensor reading and output a smoothed pressure value.
 
 class Sensor:
-    def read(self) -> float:
-        raise NotImplementedError("Sensor not implemented")
+    pressure = 0
 
 class RingBuffer:
     def __init__(self, maxlen):
@@ -37,7 +36,7 @@ class RingBuffer:
         return min(self._len, self._maxlen)
 
 class FilteredPressureSensor:
-    def __init__(self, bufferSize: int, sensor):
+    def __init__(self, bufferSize: int, sensor: Sensor):
         self._bufferSize = bufferSize
         self._buffer = RingBuffer(bufferSize)
         self._sensor = sensor

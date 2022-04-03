@@ -2,8 +2,6 @@
 # It has a canSeparate method which returns whether or not we can trigger separation.
 # We only trigger separation if we're below separation threshold, and we believe that the rocket is going down.
 
-# from typing import List
-
 UP = 0
 DOWN = 1
 
@@ -17,7 +15,7 @@ class ApogeeTrigger:
         self._pressure_threshold = pressure_threshold
         self._down_combo = 0
 
-    def canSeparate(self, readings: List[float]) -> bool:
+    def canSeparate(self, readings: list[float]) -> bool:
         if all(abs(new - old) < self.MOVEMENT_THRESHOLD for (new, old) in zip(readings, self._old_readings)):
             return False
         votes = [int(new >= old)
