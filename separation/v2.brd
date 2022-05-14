@@ -36,29 +36,29 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -3242,7 +3242,7 @@ RX</text>
 <rectangle x1="-0.307" y1="16.26" x2="0.273" y2="16.28" layer="30" rot="R180"/>
 <text x="-11.43" y="-1.27" size="0.762" layer="21" font="vector" ratio="12" rot="R180">SER-</text>
 <text x="-7.112" y="2.413" size="0.635" layer="21" font="vector" rot="R180">VBAT</text>
-<text x="-3.81" y="1.143" size="0.8382" layer="21" font="vector">COM</text>
+<text x="-3.81" y="1.143" size="0.8382" layer="21" font="vector">CON</text>
 <text x="-18.288" y="7.62" size="2.54" layer="21" font="vector">+</text>
 <text x="-18.415" y="11.303" size="2.54" layer="21" font="vector" rot="R90">-</text>
 <text x="-20.193" y="7.747" size="2.54" layer="22" font="vector" rot="MR90">+</text>
@@ -5044,7 +5044,10 @@ Everything else you will find on https://aisler.net/help</description>
 <contactref element="SERCON" pad="3"/>
 <contactref element="MCU-L" pad="3"/>
 <wire x1="-7.62" y1="15.4305" x2="-9.398" y2="15.4305" width="1.524" layer="1"/>
-<wire x1="-5.08" y1="0" x2="-7.62" y2="15.4305" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="2.54" width="0.508" layer="1"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="12.7" width="0.508" layer="1"/>
+<wire x1="-2.54" y1="12.7" x2="-5.2705" y2="15.4305" width="0.508" layer="1"/>
+<wire x1="-5.2705" y1="15.4305" x2="-7.62" y2="15.4305" width="0.508" layer="1"/>
 </signal>
 <signal name="BUZZ">
 <contactref element="LOUD" pad="1"/>
@@ -5068,12 +5071,14 @@ Everything else you will find on https://aisler.net/help</description>
 <wire x1="-6.35" y1="17.78" x2="-7.4295" y2="17.78" width="0.254" layer="16"/>
 <wire x1="-7.4295" y1="17.78" x2="-7.52475" y2="17.87525" width="0.254" layer="16"/>
 <wire x1="-7.52475" y1="17.87525" x2="-7.62" y2="17.9705" width="0.254" layer="16"/>
-<wire x1="1.143" y1="0.254" x2="1.143" y2="12.827" width="0.508" layer="16"/>
-<wire x1="-3.90525" y1="17.87525" x2="-7.52475" y2="17.87525" width="0.508" layer="16"/>
-<wire x1="1.143" y1="12.827" x2="-3.90525" y2="17.87525" width="0.508" layer="16"/>
-<wire x1="-3.90525" y1="20.41525" x2="-3.90525" y2="17.87525" width="0.508" layer="16"/>
-<wire x1="-6.477" y1="22.987" x2="-3.90525" y2="20.41525" width="0.508" layer="16"/>
-<wire x1="1.143" y1="0.254" x2="4.064" y2="0.254" width="0" layer="19" extent="1-1"/>
+<wire x1="1.143" y1="0.254" x2="4.064" y2="0.254" width="1.016" layer="1"/>
+<wire x1="-3.81" y1="20.32" x2="-3.81" y2="19.05" width="0.508" layer="16"/>
+<wire x1="-3.81" y1="19.05" x2="-4.98475" y2="17.87525" width="0.508" layer="16"/>
+<wire x1="-4.98475" y1="17.87525" x2="-7.52475" y2="17.87525" width="0.508" layer="16"/>
+<wire x1="-6.477" y1="22.987" x2="-3.81" y2="20.32" width="0.508" layer="16"/>
+<wire x1="-7.62" y1="17.9705" x2="-2.7305" y2="17.9705" width="0.508" layer="1"/>
+<wire x1="1.143" y1="14.097" x2="1.143" y2="0.254" width="0.508" layer="1"/>
+<wire x1="-2.7305" y1="17.9705" x2="1.143" y2="14.097" width="0.508" layer="1"/>
 </signal>
 <signal name="A0">
 <contactref element="MCU-L" pad="1"/>
@@ -5083,9 +5088,9 @@ Everything else you will find on https://aisler.net/help</description>
 <signal name="SER-" class="1">
 <contactref element="SERCON" pad="1"/>
 <contactref element="Q1" pad="2"/>
-<wire x1="-10.16" y1="0" x2="-12.192" y2="0" width="1.016" layer="1"/>
-<wire x1="-12.192" y1="0" x2="-14.605" y2="2.413" width="1.016" layer="1"/>
-<wire x1="-14.605" y1="2.413" x2="-14.605" y2="2.921" width="1.016" layer="1"/>
+<wire x1="-14.605" y1="2.921" x2="-14.605" y2="2.286" width="1.524" layer="1"/>
+<wire x1="-14.605" y1="2.286" x2="-12.319" y2="0" width="1.524" layer="1"/>
+<wire x1="-12.319" y1="0" x2="-10.16" y2="0" width="1.524" layer="1"/>
 </signal>
 <signal name="SERPOW">
 <contactref element="MCU-L" pad="4"/>
@@ -5095,13 +5100,12 @@ Everything else you will find on https://aisler.net/help</description>
 <wire x1="-13.208" y1="14.478" x2="-11.43" y2="12.7" width="0.508" layer="1"/>
 <wire x1="-11.43" y1="12.7" x2="-7.8105" y2="12.7" width="0.508" layer="1"/>
 <wire x1="-7.8105" y1="12.7" x2="-7.62" y2="12.8905" width="0.508" layer="1"/>
-<wire x1="-17.145" y1="3.175" x2="-19.05" y2="5.08" width="0.508" layer="1"/>
-<wire x1="-19.05" y1="5.08" x2="-19.05" y2="12.7" width="0.508" layer="1"/>
-<wire x1="-19.05" y1="12.7" x2="-17.272" y2="14.478" width="0.508" layer="1"/>
+<wire x1="-17.272" y1="14.478" x2="-19.05" y2="12.7" width="0.508" layer="1"/>
 <contactref element="Q1" pad="1"/>
 <contactref element="R3" pad="1"/>
-<wire x1="-17.145" y1="-0.254" x2="-17.145" y2="3.175" width="1.016" layer="1"/>
-<wire x1="-17.145" y1="-0.254" x2="-17.145" y2="2.921" width="0" layer="19" extent="1-1"/>
+<wire x1="-19.05" y1="4.826" x2="-17.145" y2="2.921" width="0.508" layer="1"/>
+<wire x1="-19.05" y1="12.7" x2="-19.05" y2="4.826" width="0.508" layer="1"/>
+<wire x1="-17.145" y1="2.921" x2="-17.145" y2="-0.254" width="0.508" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -5115,13 +5119,12 @@ Everything else you will find on https://aisler.net/help</description>
 <approved hash="23,1,9e8d53e267b2f622"/>
 <approved hash="23,1,fb566ff9581493c6"/>
 <approved hash="23,1,900552d264baf7f8"/>
-<approved hash="23,1,f8866da95a2ee61e"/>
 <approved hash="23,1,f8d66fa1585082c6"/>
 <approved hash="23,1,9cdd5ab210aaffda"/>
 <approved hash="23,1,f1d66ff953d69106"/>
 <approved hash="23,1,58fc58ab66b63527"/>
 <approved hash="23,1,9e8d59626572fde0"/>
-<approved hash="23,1,3ffa6b0e646d3099"/>
+<approved hash="23,1,9ee55502600af10a"/>
 </errors>
 </board>
 </drawing>
