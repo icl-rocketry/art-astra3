@@ -3247,7 +3247,7 @@ RX</text>
 <text x="-18.415" y="11.303" size="2.54" layer="21" font="vector" rot="R90">-</text>
 <text x="-20.193" y="7.747" size="2.54" layer="22" font="vector" rot="MR90">+</text>
 <text x="-20.447" y="11.303" size="2.54" layer="22" font="vector" rot="MR90">-</text>
-<text x="-12.7" y="14.732" size="0.508" layer="21" font="vector">VSENSE
+<text x="-12.827" y="14.478" size="0.508" layer="21" font="vector">VSENSE
 SERVO</text>
 <text x="-18.542" y="20.574" size="0.8382" layer="21" font="vector">SCL</text>
 <text x="-18.669" y="14.224" size="0.8382" layer="21" font="vector">SDA</text>
@@ -3264,7 +3264,7 @@ SERVO</text>
 <text x="16.383" y="22.352" size="0.8382" layer="22" font="vector" rot="MR180">VCC</text>
 <text x="18.796" y="16.256" size="0.8382" layer="22" font="vector" rot="MR90">GND</text>
 <text x="16.51" y="21.59" size="0.8382" layer="21" font="vector">VCC</text>
-<text x="6.35" y="1.27" size="1.27" layer="22" font="vector" ratio="12" rot="MR0">ART Separation</text>
+<text x="6.35" y="2.159" size="1.27" layer="22" font="vector" ratio="12" rot="MR0">ART Separation</text>
 <text x="-4.318" y="3.048" size="0.8382" layer="21" font="vector">STEMMA this end</text>
 <text x="-3.81" y="21.844" size="0.8382" layer="21" font="vector">USB C This end</text>
 <text x="13.97" y="22.86" size="1.016" layer="22" font="vector" ratio="12" rot="MR0">ASTRA Designed by ART@ICLR</text>
@@ -4939,7 +4939,7 @@ Everything else you will find on https://aisler.net/help</description>
 <contactref element="C2" pad="1"/>
 <contactref element="Q1" pad="3"/>
 <contactref element="R3" pad="2"/>
-<polygon width="0.508" layer="16">
+<polygon width="0.508" layer="16" isolate="0.254">
 <vertex x="-25.4" y="25.4"/>
 <vertex x="-20.32" y="30.48"/>
 <vertex x="19.05" y="30.48"/>
@@ -4952,6 +4952,7 @@ Everything else you will find on https://aisler.net/help</description>
 <vertex x="-26.67" y="-2.54"/>
 <vertex x="-26.67" y="24.13"/>
 </polygon>
+<wire x1="-15.113" y1="12.136" x2="-14.859" y2="16.891" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="MCU-R" pad="4"/>
@@ -5027,7 +5028,7 @@ Everything else you will find on https://aisler.net/help</description>
 <contactref element="SERCON" pad="2"/>
 <contactref element="C2" pad="2"/>
 <wire x1="-1.397" y1="0.254" x2="-1.524" y2="0.254" width="1.016" layer="1"/>
-<polygon width="0.508" layer="1">
+<polygon width="0.508" layer="1" isolate="0.254">
 <vertex x="-20.32" y="27.94"/>
 <vertex x="-22.86" y="25.4"/>
 <vertex x="-22.86" y="-1.27"/>
@@ -5039,6 +5040,10 @@ Everything else you will find on https://aisler.net/help</description>
 <vertex x="17.78" y="27.94"/>
 <vertex x="12.7" y="27.94"/>
 </polygon>
+<wire x1="-1.397" y1="0.254" x2="14.224" y2="14.605" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.62" y1="0" x2="-1.524" y2="0.254" width="0" layer="19" extent="1-1"/>
+<wire x1="-15.113" y1="8.636" x2="-7.62" y2="0" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.859" y1="19.431" x2="-15.113" y2="8.636" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SERVO">
 <contactref element="SERCON" pad="3"/>
