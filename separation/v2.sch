@@ -511,6 +511,27 @@
 <wire x1="6.25" y1="-4.7" x2="-2.75" y2="-4.7" width="0.1" layer="51"/>
 <wire x1="-2.75" y1="-4.7" x2="-2.75" y2="4.5" width="0.1" layer="51"/>
 </package>
+<package name="TO254P469X1042X1967-3P">
+<description>&lt;b&gt;IRLZ24NPBF&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="1.28" diameter="1.92" shape="square"/>
+<pad name="2" x="2.54" y="0" drill="1.28" diameter="1.92"/>
+<pad name="3" x="5.08" y="0" drill="1.28" diameter="1.92"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-2.98" y1="3.445" x2="8.06" y2="3.445" width="0.05" layer="51"/>
+<wire x1="8.06" y1="3.445" x2="8.06" y2="-1.745" width="0.05" layer="51"/>
+<wire x1="8.06" y1="-1.745" x2="-2.98" y2="-1.745" width="0.05" layer="51"/>
+<wire x1="-2.98" y1="-1.745" x2="-2.98" y2="3.445" width="0.05" layer="51"/>
+<wire x1="-2.73" y1="3.195" x2="7.81" y2="3.195" width="0.1" layer="51"/>
+<wire x1="7.81" y1="3.195" x2="7.81" y2="-1.495" width="0.1" layer="51"/>
+<wire x1="7.81" y1="-1.495" x2="-2.73" y2="-1.495" width="0.1" layer="51"/>
+<wire x1="-2.73" y1="-1.495" x2="-2.73" y2="3.195" width="0.1" layer="51"/>
+<wire x1="-2.73" y1="1.925" x2="-1.46" y2="3.195" width="0.1" layer="51"/>
+<wire x1="7.81" y1="-1.495" x2="7.81" y2="3.195" width="0.2" layer="21"/>
+<wire x1="7.81" y1="3.195" x2="-2.73" y2="3.195" width="0.2" layer="21"/>
+<wire x1="-2.73" y1="3.195" x2="-2.73" y2="0" width="0.2" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="CAPPRD400W70D900H500" urn="urn:adsk.eagle:package:34276129/2" type="model">
@@ -559,6 +580,29 @@
 <text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
 <pin name="1" x="0" y="0" length="middle"/>
 <pin name="2" x="0" y="-2.54" length="middle"/>
+</symbol>
+<symbol name="IRLZ24NPBF">
+<wire x1="7.62" y1="2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="5.842" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="5.842" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.842" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="5.842" y1="5.588" x2="5.842" y2="4.572" width="0.254" layer="94"/>
+<wire x1="5.842" y1="-0.508" x2="5.842" y2="0.508" width="0.254" layer="94"/>
+<wire x1="5.842" y1="2.032" x2="5.842" y2="3.048" width="0.254" layer="94"/>
+<circle x="6.35" y="2.54" radius="3.81" width="0.254" layer="94"/>
+<text x="11.43" y="3.81" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="11.43" y="1.27" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="G" x="0" y="0" visible="pad" length="short"/>
+<pin name="D" x="7.62" y="10.16" visible="pad" length="short" rot="R270"/>
+<pin name="S" x="7.62" y="-5.08" visible="pad" length="short" rot="R90"/>
+<polygon width="0.254" layer="94">
+<vertex x="5.842" y="2.54"/>
+<vertex x="6.858" y="3.048"/>
+<vertex x="6.858" y="2.032"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -640,6 +684,33 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <attribute name="MANUFACTURER_PART_NUMBER" value="MB332-350M02SZ" constant="no"/>
 <attribute name="RS_PART_NUMBER" value="7901149" constant="no"/>
 <attribute name="RS_PRICE-STOCK" value="https://uk.rs-online.com/web/p/products/7901149" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IRLZ24NPBF" prefix="Q">
+<description>&lt;b&gt;MOSFET MOSFT 55V 18A 60mOhm 10nC LogLvlAB&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://uk.rs-online.com/web/p/products/5411231P"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="IRLZ24NPBF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO254P469X1042X1967-3P">
+<connects>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ALLIED_NUMBER" value="70017119" constant="no"/>
+<attribute name="DESCRIPTION" value="MOSFET MOSFT 55V 18A 60mOhm 10nC LogLvlAB" constant="no"/>
+<attribute name="HEIGHT" value="4.69mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Infineon" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="IRLZ24NPBF" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="5411231P" constant="no"/>
+<attribute name="RS_PRICE-STOCK" value="http://uk.rs-online.com/web/p/products/5411231P" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9783,6 +9854,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="100nF"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="330nF"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="Q1" library="SamacSys_Parts" deviceset="IRLZ24NPBF" device=""/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/2V" package3d_urn="urn:adsk.eagle:package:23495/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -9819,8 +9892,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="NAME" x="-11.43" y="43.815" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-11.43" y="30.48" size="1.778" layer="96"/>
 </instance>
-<instance part="GND2" gate="1" x="-17.78" y="48.26" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="-20.32" y="50.8" size="1.778" layer="96" rot="MR180"/>
+<instance part="GND2" gate="1" x="-17.78" y="81.28" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="-20.32" y="83.82" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="GND3" gate="1" x="-27.94" y="7.62" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="-30.48" y="5.08" size="1.778" layer="96" rot="MR90"/>
@@ -9877,6 +9950,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="GND7" gate="1" x="60.96" y="-27.94" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="63.5" y="-30.48" size="1.778" layer="96" rot="MR0"/>
 </instance>
+<instance part="Q1" gate="G$1" x="-25.4" y="58.42" smashed="yes">
+<attribute name="NAME" x="-13.97" y="62.23" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="-13.97" y="59.69" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="R3" gate="G$1" x="-35.56" y="66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="-37.0586" y="62.23" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-32.258" y="62.23" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9904,12 +9985,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SERCON" gate="A" pin="1"/>
-<wire x1="-7.62" y1="40.64" x2="-17.78" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="-17.78" y1="40.64" x2="-17.78" y2="45.72" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="LDO" gate="G$1" pin="GND"/>
 <wire x1="43.18" y1="-2.54" x2="43.18" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
@@ -9928,6 +10003,16 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="60.96" y1="-25.4" x2="60.96" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="Q1" gate="G$1" pin="D"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="-17.78" y1="68.58" x2="-17.78" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="-17.78" y1="73.66" x2="-17.78" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="71.12" x2="-35.56" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="73.66" x2="-17.78" y2="73.66" width="0.1524" layer="91"/>
+<junction x="-17.78" y="73.66"/>
+</segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
@@ -9941,13 +10026,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="35.56" y1="53.34" x2="17.78" y2="53.34" width="0.1524" layer="91"/>
 <label x="20.32" y="53.34" size="1.778" layer="95"/>
 <pinref part="MCU-R" gate="A" pin="2"/>
-</segment>
-</net>
-<net name="A3" class="0">
-<segment>
-<label x="45.72" y="58.42" size="1.778" layer="95"/>
-<pinref part="MCU-L" gate="A" pin="4"/>
-<wire x1="58.42" y1="58.42" x2="45.72" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -10091,6 +10169,31 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="45.72" y="66.04" size="1.778" layer="95"/>
 <pinref part="MCU-L" gate="A" pin="1"/>
 <wire x1="45.72" y1="66.04" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SER-" class="1">
+<segment>
+<pinref part="SERCON" gate="A" pin="1"/>
+<wire x1="-7.62" y1="40.64" x2="-17.78" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="S"/>
+<wire x1="-17.78" y1="40.64" x2="-17.78" y2="53.34" width="0.1524" layer="91"/>
+<label x="-15.24" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SERPOW" class="0">
+<segment>
+<pinref part="Q1" gate="G$1" pin="G"/>
+<wire x1="-25.4" y1="58.42" x2="-35.56" y2="58.42" width="0.1524" layer="91"/>
+<label x="-35.56" y="53.34" size="1.778" layer="95"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="-35.56" y1="60.96" x2="-35.56" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="58.42" x2="-45.72" y2="58.42" width="0.1524" layer="91"/>
+<junction x="-35.56" y="58.42"/>
+</segment>
+<segment>
+<label x="45.72" y="58.42" size="1.778" layer="95"/>
+<pinref part="MCU-L" gate="A" pin="4"/>
+<wire x1="58.42" y1="58.42" x2="45.72" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
