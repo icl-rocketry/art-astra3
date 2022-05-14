@@ -1,2 +1,6 @@
 *.s#*
 *.b#*
+separation/sw/src/__pycache__
+separation/sw/.mypy_cache
+.mypy_cache
+copy
