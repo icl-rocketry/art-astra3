@@ -3405,6 +3405,26 @@ Ellie Hoggarth</text>
 <wire x1="7.81" y1="3.195" x2="-2.73" y2="3.195" width="0.2" layer="21"/>
 <wire x1="-2.73" y1="3.195" x2="-2.73" y2="0" width="0.2" layer="21"/>
 </package>
+<package name="DIOAD1414W86L464D238">
+<description>&lt;b&gt;DO-41&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="2.794" y="0" drill="1.05" diameter="1.575" shape="square"/>
+<pad name="2" x="11.179" y="0" drill="1.05" diameter="1.575"/>
+<text x="6.35" y="-2.54" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="6.35" y="2.54" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="4.732" y1="1.188" x2="9.367" y2="1.188" width="0.1" layer="51"/>
+<wire x1="9.367" y1="1.188" x2="9.367" y2="-1.187" width="0.1" layer="51"/>
+<wire x1="9.367" y1="-1.187" x2="4.732" y2="-1.187" width="0.1" layer="51"/>
+<wire x1="4.732" y1="-1.187" x2="4.732" y2="1.188" width="0.1" layer="51"/>
+<wire x1="4.732" y1="0" x2="5.92" y2="1.188" width="0.1" layer="51"/>
+<wire x1="4.732" y1="1.188" x2="9.368" y2="1.188" width="0.2" layer="21"/>
+<wire x1="9.368" y1="1.188" x2="9.368" y2="-1.188" width="0.2" layer="21"/>
+<wire x1="9.368" y1="-1.188" x2="4.732" y2="-1.188" width="0.2" layer="21"/>
+<wire x1="4.732" y1="-1.188" x2="4.732" y2="1.188" width="0.2" layer="21"/>
+<wire x1="4.732" y1="0" x2="5.92" y2="1.188" width="0.2" layer="21"/>
+<wire x1="3.932" y1="0" x2="4.732" y2="0" width="0.2" layer="21"/>
+<wire x1="9.368" y1="0" x2="10.041" y2="0" width="0.2" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="CAPPRD400W70D900H500" urn="urn:adsk.eagle:package:34276129/2" type="model">
@@ -4905,6 +4925,17 @@ Everything else you will find on https://aisler.net/help</description>
 <attribute name="SPICEPREFIX" value="R" x="-15.875" y="-0.254" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-18.0086" y="-2.5654" size="1.27" layer="27" ratio="10"/>
 </element>
+<element name="D1" library="SamacSys_Parts" package="DIOAD1414W86L464D238" value="1N5819" x="-27.94" y="-12.7" smashed="yes">
+<attribute name="ALLIED_NUMBER" value="70013816" x="-27.94" y="-12.7" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="Schottky barrier diode,1N58191A 40V STMicroelectronics 1N5819, Schottky Diode, 40V 1A, 2-Pin DO-204AL" x="-27.94" y="-12.7" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="-27.94" y="-12.7" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="STMicroelectronics" x="-27.94" y="-12.7" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1N5819" x="-27.94" y="-12.7" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-21.59" y="-15.24" size="1.27" layer="25" align="center"/>
+<attribute name="RS_PART_NUMBER" value="4864460P" x="-27.94" y="-12.7" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PRICE-STOCK" value="http://uk.rs-online.com/web/p/products/4864460P" x="-27.94" y="-12.7" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-21.59" y="-10.16" size="1.27" layer="27" align="center"/>
+</element>
 </elements>
 <signals>
 <signal name="PB22/I6/SERCOM5.1">
@@ -4971,18 +5002,15 @@ Everything else you will find on https://aisler.net/help</description>
 </signal>
 <signal name="VCC" class="1">
 <contactref element="MCU-R" pad="7"/>
-<contactref element="LDO" pad="3"/>
-<contactref element="JP4" pad="1"/>
-<wire x1="17.653" y1="19.939" x2="14.458" y2="19.939" width="1.016" layer="1"/>
-<wire x1="14.458" y1="19.939" x2="14.224" y2="19.705" width="0.508" layer="1"/>
-<wire x1="13.4185" y1="20.5105" x2="14.224" y2="19.705" width="1.524" layer="1"/>
 <wire x1="7.62" y1="20.5105" x2="13.4185" y2="20.5105" width="1.524" layer="1"/>
-<contactref element="C1" pad="2"/>
 <wire x1="2.3495" y1="20.5105" x2="7.62" y2="20.5105" width="0.508" layer="16"/>
-<wire x1="-12.065" y1="18.796" x2="-12.065" y2="20.193" width="0.508" layer="16"/>
 <wire x1="-12.065" y1="20.193" x2="-9.398" y2="22.86" width="0.508" layer="16"/>
 <wire x1="-9.398" y1="22.86" x2="0" y2="22.86" width="0.508" layer="16"/>
 <wire x1="0" y1="22.86" x2="2.3495" y2="20.5105" width="0.508" layer="16"/>
+<contactref element="D1" pad="1"/>
+<contactref element="JP4" pad="1"/>
+<wire x1="-12.065" y1="20.193" x2="-25.146" y2="-12.7" width="0" layer="19" extent="16-16"/>
+<wire x1="17.653" y1="19.939" x2="13.4185" y2="20.5105" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="MCU-R" pad="5"/>
@@ -5072,6 +5100,14 @@ Everything else you will find on https://aisler.net/help</description>
 <wire x1="-17.145" y1="9.271" x2="-17.145" y2="2.921" width="0.508" layer="16"/>
 <wire x1="-11.3665" y1="12.8905" x2="-7.62" y2="12.8905" width="0.508" layer="1"/>
 <wire x1="-13.843" y1="10.414" x2="-11.3665" y2="12.8905" width="0.508" layer="1"/>
+</signal>
+<signal name="VOUT" class="1">
+<contactref element="LDO" pad="3"/>
+<contactref element="C1" pad="2"/>
+<contactref element="D1" pad="2"/>
+<wire x1="14.458" y1="19.939" x2="14.224" y2="19.705" width="0.508" layer="1"/>
+<wire x1="-12.065" y1="18.796" x2="14.224" y2="19.705" width="0" layer="19" extent="1-1"/>
+<wire x1="-16.761" y1="-12.7" x2="-12.065" y2="18.796" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
