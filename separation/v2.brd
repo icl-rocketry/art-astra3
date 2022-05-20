@@ -5066,10 +5066,10 @@ Everything else you will find on https://aisler.net/help</description>
 <signal name="SERVO">
 <contactref element="SERCON" pad="3"/>
 <contactref element="MCU-L" pad="3"/>
-<wire x1="-7.62" y1="15.4305" x2="-6.5405" y2="15.4305" width="0.508" layer="16"/>
-<wire x1="-6.5405" y1="15.4305" x2="-4.191" y2="13.081" width="0.508" layer="16"/>
-<wire x1="-4.191" y1="13.081" x2="-4.191" y2="0.889" width="0.508" layer="16"/>
-<wire x1="-4.191" y1="0.889" x2="-5.08" y2="0" width="0.508" layer="16"/>
+<wire x1="-7.62" y1="15.4305" x2="-6.6675" y2="15.4305" width="0.508" layer="16"/>
+<wire x1="-6.6675" y1="15.4305" x2="-4.572" y2="13.335" width="0.508" layer="16"/>
+<wire x1="-4.572" y1="13.335" x2="-4.572" y2="0.508" width="0.508" layer="16"/>
+<wire x1="-4.572" y1="0.508" x2="-5.08" y2="0" width="0.508" layer="16"/>
 </signal>
 <signal name="BUZZ">
 <contactref element="LOUD" pad="1"/>
@@ -5117,13 +5117,13 @@ Everything else you will find on https://aisler.net/help</description>
 <wire x1="-17.145" y1="2.921" x2="-17.145" y2="-0.254" width="0.508" layer="1"/>
 <wire x1="-17.145" y1="2.921" x2="-17.145" y2="3.175" width="0.508" layer="16"/>
 <wire x1="-10.795" y1="4.445" x2="-10.16" y2="3.81" width="0.508" layer="16"/>
-<wire x1="-6.35" y1="3.81" x2="-5.08" y2="5.08" width="0.508" layer="16"/>
-<wire x1="-5.08" y1="11.43" x2="-6.5405" y2="12.8905" width="0.508" layer="16"/>
+<wire x1="-6.35" y1="3.81" x2="-5.461" y2="4.699" width="0.508" layer="16"/>
+<wire x1="-5.461" y1="11.811" x2="-6.5405" y2="12.8905" width="0.508" layer="16"/>
 <wire x1="-6.5405" y1="12.8905" x2="-7.62" y2="12.8905" width="0.508" layer="16"/>
 <wire x1="-17.145" y1="3.175" x2="-15.875" y2="4.445" width="0.508" layer="16"/>
 <wire x1="-15.875" y1="4.445" x2="-10.795" y2="4.445" width="0.508" layer="16"/>
 <wire x1="-10.16" y1="3.81" x2="-6.35" y2="3.81" width="0.508" layer="16"/>
-<wire x1="-5.08" y1="5.08" x2="-5.08" y2="11.43" width="0.508" layer="16"/>
+<wire x1="-5.461" y1="4.699" x2="-5.461" y2="11.811" width="0.508" layer="16"/>
 </signal>
 <signal name="VOUT" class="1">
 <contactref element="LDO" pad="3"/>
