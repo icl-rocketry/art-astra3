@@ -4,3 +4,5 @@ separation/sw/src/__pycache__
 separation/sw/.mypy_cache
 .mypy_cache
 copy
+separation/v2_keyring.brd
+separation/v2_keyring.sch
