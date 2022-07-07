@@ -34,8 +34,8 @@ def move(position):
 
 
 while True:
-    position = int(input("Enter position: "))
     try:
+        position = int(input("Enter position: "))
         move(position)
     except ValueError:
         print("Invalid input - range is 1 to 100")
