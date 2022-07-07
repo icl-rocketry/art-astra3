@@ -21,16 +21,17 @@ def get_voltage():
     return (reading/R2) * (R1+R2)
 
 def move(position):
-
+    led.fill((0, 255, 0))
+    serpow.value = True
+    servo.duty_cycle = 65535 // (100/position)
+    time.sleep(0.5)
+    serpow.value = False
+    led.fill((255, 0, 0))
 
 
 
 while True:
-    led.fill((255, 0, 0))
-    time.sleep(0.5)
-    led.fill((0, 255, 0))
-    # time.sleep(0.5)
-    print(get_voltage())
-    #buzzer.noise()
-    led.fill((0, 0, 255))
-    #buzzer.siren(cycles = 1)
+    position = int(input("Enter position: "))
+    move(position)
+    print (f"Voltage: {get_voltage()}")
+    time.sleep(1)
