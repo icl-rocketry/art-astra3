@@ -60,6 +60,27 @@
 <description>&lt;b&gt;https://componentsearchengine.com&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
 <packages>
+<package name="TO254P469X1042X1967-3P">
+<description>&lt;b&gt;IRLZ24NPBF&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="1.28" diameter="1.92" shape="square" />
+<pad name="2" x="2.54" y="0" drill="1.28" diameter="1.92" />
+<pad name="3" x="5.08" y="0" drill="1.28" diameter="1.92" />
+<text x="0" y="0" align="center" size="1.27" layer="25" rot="R0">&gt;NAME</text>
+<text x="0" y="0" align="center" size="1.27" layer="27" rot="R0">&gt;VALUE</text>
+<wire x1="-2.98" y1="3.445" x2="8.06" y2="3.445" width="0.05" layer="51" />
+<wire x1="8.06" y1="3.445" x2="8.06" y2="-1.745" width="0.05" layer="51" />
+<wire x1="8.06" y1="-1.745" x2="-2.98" y2="-1.745" width="0.05" layer="51" />
+<wire x1="-2.98" y1="-1.745" x2="-2.98" y2="3.445" width="0.05" layer="51" />
+<wire x1="-2.73" y1="3.195" x2="7.81" y2="3.195" width="0.1" layer="51" />
+<wire x1="7.81" y1="3.195" x2="7.81" y2="-1.495" width="0.1" layer="51" />
+<wire x1="7.81" y1="-1.495" x2="-2.73" y2="-1.495" width="0.1" layer="51" />
+<wire x1="-2.73" y1="-1.495" x2="-2.73" y2="3.195" width="0.1" layer="51" />
+<wire x1="-2.73" y1="1.925" x2="-1.46" y2="3.195" width="0.1" layer="51" />
+<wire x1="7.81" y1="-1.495" x2="7.81" y2="3.195" width="0.2" layer="21" />
+<wire x1="7.81" y1="3.195" x2="-2.73" y2="3.195" width="0.2" layer="21" />
+<wire x1="-2.73" y1="3.195" x2="-2.73" y2="0" width="0.2" layer="21" />
+</package>
 <package name="DIOAD1414W86L464D238">
 <description>&lt;b&gt;DO-41&lt;/b&gt;&lt;br&gt;
 </description>
@@ -198,37 +219,65 @@
 </packages>
 <packages3d>
 <package3d name="CAPPRD320W70D660H400" urn="urn:adsk.eagle:package:34276128/2" type="model">
-<description>&lt;b&gt;PCB Mount Buzzer&lt;/b&gt;&lt;br&gt;</description>
+<description>&lt;b&gt;PCB Mount Buzzer&lt;/b&gt;&lt;br&gt;
+</description>
 <packageinstances>
 <packageinstance name="CAPPRD320W70D660H400"/>
 </packageinstances>
 </package3d>
 <package3d name="CAPPRD400W70D900H500" urn="urn:adsk.eagle:package:34276129/2" type="model">
-<description>&lt;b&gt;PCB Mount Buzzer&lt;/b&gt;&lt;br&gt;</description>
+<description>&lt;b&gt;PCB Mount Buzzer&lt;/b&gt;&lt;br&gt;
+</description>
 <packageinstances>
 <packageinstance name="CAPPRD400W70D900H500"/>
 </packageinstances>
 </package3d>
 <package3d name="KMTG0902" urn="urn:adsk.eagle:package:34276126/2" type="model">
-<description>&lt;b&gt;KMTG0902-2&lt;/b&gt;&lt;br&gt;</description>
+<description>&lt;b&gt;KMTG0902-2&lt;/b&gt;&lt;br&gt;
+</description>
 <packageinstances>
 <packageinstance name="KMTG0902"/>
 </packageinstances>
 </package3d>
 <package3d name="TO255P460X1020X2008-3P" urn="urn:adsk.eagle:package:34276127/2" type="model">
-<description>&lt;b&gt;3-Pin TO-220&lt;/b&gt;&lt;br&gt;</description>
+<description>&lt;b&gt;3-Pin TO-220&lt;/b&gt;&lt;br&gt;
+</description>
 <packageinstances>
 <packageinstance name="TO255P460X1020X2008-3P"/>
 </packageinstances>
 </package3d>
 <package3d name="KSSG95B30" urn="urn:adsk.eagle:package:34276125/2" type="model">
-<description>&lt;b&gt;KSSG95B30-2&lt;/b&gt;&lt;br&gt;</description>
+<description>&lt;b&gt;KSSG95B30-2&lt;/b&gt;&lt;br&gt;
+</description>
 <packageinstances>
 <packageinstance name="KSSG95B30"/>
 </packageinstances>
 </package3d>
 </packages3d>
 <symbols>
+<symbol name="IRLZ24NPBF">
+<wire x1="7.62" y1="2.54" x2="7.62" y2="-2.54" width="0.254" layer="94" />
+<wire x1="7.62" y1="5.08" x2="7.62" y2="7.62" width="0.254" layer="94" />
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" />
+<wire x1="5.08" y1="5.08" x2="5.08" y2="0" width="0.254" layer="94" />
+<wire x1="7.62" y1="2.54" x2="5.842" y2="2.54" width="0.254" layer="94" />
+<wire x1="7.62" y1="5.08" x2="5.842" y2="5.08" width="0.254" layer="94" />
+<wire x1="5.842" y1="0" x2="7.62" y2="0" width="0.254" layer="94" />
+<wire x1="5.842" y1="5.588" x2="5.842" y2="4.572" width="0.254" layer="94" />
+<wire x1="5.842" y1="-0.508" x2="5.842" y2="0.508" width="0.254" layer="94" />
+<wire x1="5.842" y1="2.032" x2="5.842" y2="3.048" width="0.254" layer="94" />
+<circle x="6.35" y="2.54" radius="3.81" width="0.254" layer="94" />
+<text x="11.43" y="3.81" align="center-left" size="1.778" layer="95">&gt;NAME</text>
+<text x="11.43" y="1.27" align="center-left" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="G" x="0" y="0" visible="pad" length="short" direction="io" rot="R0" />
+<pin name="D" x="7.62" y="10.16" visible="pad" length="short" direction="io" rot="R270" />
+<pin name="S" x="7.62" y="-5.08" visible="pad" length="short" direction="io" rot="R90" />
+<polygon width="0.254" layer="94">
+<vertex x="5.842" y="2.54" />
+<vertex x="6.858" y="3.048" />
+<vertex x="6.858" y="2.032" />
+</polygon>
+</symbol>
 <symbol name="1N5819">
 <wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
@@ -308,6 +357,33 @@
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="IRLZ24NPBF" prefix="Q">
+<description>&lt;b&gt;MOSFET MOSFT 55V 18A 60mOhm 10nC LogLvlAB&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://uk.rs-online.com/web/p/products/5411231P"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="IRLZ24NPBF" x="0" y="0" />
+</gates>
+<devices>
+<device name="" package="TO254P469X1042X1967-3P">
+<connects>
+<connect gate="G$1" pin="G" pad="1" />
+<connect gate="G$1" pin="D" pad="2" />
+<connect gate="G$1" pin="S" pad="3" />
+</connects>
+<technologies>
+<technology name="">
+<attribute name="RS_Part_Number" value="5411231P" constant="no" />
+<attribute name="RS_Price-Stock" value="http://uk.rs-online.com/web/p/products/5411231P" constant="no" />
+<attribute name="Manufacturer_Name" value="Infineon" constant="no" />
+<attribute name="Manufacturer_Part_Number" value="IRLZ24NPBF" constant="no" />
+<attribute name="Allied_Number" value="70017119" constant="no" />
+<attribute name="Description" value="MOSFET MOSFT 55V 18A 60mOhm 10nC LogLvlAB" constant="no" />
+<attribute name="Height" value="4.69mm" constant="no" />
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="1N5819" prefix="D">
 <description>&lt;b&gt;Schottky barrier diode,1N58191A 40V STMicroelectronics 1N5819, Schottky Diode, 40V 1A, 2-Pin DO-204AL&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="http://uk.rs-online.com/web/p/products/4864460P"&gt; Datasheet &lt;/a&gt;</description>
