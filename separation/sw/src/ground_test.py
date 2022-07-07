@@ -23,7 +23,7 @@ def get_voltage():
 def move(position):
     led.fill((0, 255, 0))
     serpow.value = True
-    servo.duty_cycle = (65535 * position) / 100
+    servo.duty_cycle = (65535 * position) // 100
     time.sleep(0.5)
     serpow.value = False
     led.fill((255, 0, 0))
