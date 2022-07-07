@@ -1,10 +1,13 @@
 import random
 from src.fps import FilteredPressureSensor, Sensor  # type: ignore
 from src.trigger import ApogeeTrigger  # type: ignore
+import sys
+from tqdm import tqdm
+from functools import cache
 
 TRIGGER_RANGE = 5000  # 5000 milliseconds is 5 seconds after apogee
 
-
+@cache
 def read_file(filename: str = "astra2_data.csv") -> tuple[list[tuple[int, float]], int]:
     raw_data: list[tuple[int, float]] = []
     with open("test_data/"+filename, "r") as file:
@@ -88,77 +91,89 @@ def test_separation(sensor_config: SensorConfig) -> tuple[bool, int]:
 if __name__ == "__main__":
     PRESSURE_THRESHOLD_ASTRA2 = 100_000 # Pa
     PRESSURE_THRESHOLD_ASTRA3 = 99_000 # Pa
+
+    n_reps = int(sys.argv[1])
+    MEDIAN_FILTER_SIZE = 15
+
     configs = [
         SensorConfig("air-no-peturbation", "astra2_air.tsv", 5, PRESSURE_THRESHOLD_ASTRA2, sensors=[
-            SensorConfig.SensorConfigEntry(0, 0, 20),
-            SensorConfig.SensorConfigEntry(0, 0, 20),
-            SensorConfig.SensorConfigEntry(0, 0, 20),
+            SensorConfig.SensorConfigEntry(0, 0, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(0, 0, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(0, 0, MEDIAN_FILTER_SIZE),
         ]),
         SensorConfig("full-no-peturbation", "astra2_full.tsv", 5, PRESSURE_THRESHOLD_ASTRA2, sensors=[
-            SensorConfig.SensorConfigEntry(0, 0, 20),
-            SensorConfig.SensorConfigEntry(0, 0, 20),
-            SensorConfig.SensorConfigEntry(0, 0, 20),
+            SensorConfig.SensorConfigEntry(0, 0, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(0, 0, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(0, 0, MEDIAN_FILTER_SIZE),
         ]),
         SensorConfig("vac-no-peturbation", "dps310.tsv", 5, PRESSURE_THRESHOLD_ASTRA3, sensors=[
-            SensorConfig.SensorConfigEntry(0, 0, 20),
-            SensorConfig.SensorConfigEntry(0, 0, 20),
-            SensorConfig.SensorConfigEntry(0, 0, 20),
+            SensorConfig.SensorConfigEntry(0, 0, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(0, 0, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(0, 0, MEDIAN_FILTER_SIZE),
         ]),
         SensorConfig("vac-no-peturbation-1", "dps310_1.tsv", 5, PRESSURE_THRESHOLD_ASTRA3, sensors=[
-            SensorConfig.SensorConfigEntry(0, 0, 20),
-            SensorConfig.SensorConfigEntry(0, 0, 20),
-            SensorConfig.SensorConfigEntry(0, 0, 20),
+            SensorConfig.SensorConfigEntry(0, 0, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(0, 0, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(0, 0, MEDIAN_FILTER_SIZE),
         ]),
         SensorConfig("air-light-noise", "astra2_air.tsv", 5, PRESSURE_THRESHOLD_ASTRA2, sensors=[
-            SensorConfig.SensorConfigEntry(20, 0, 20),
-            SensorConfig.SensorConfigEntry(20, 0, 20),
-            SensorConfig.SensorConfigEntry(20, 0, 20),
+            SensorConfig.SensorConfigEntry(20, 0, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(20, 0, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(20, 0, MEDIAN_FILTER_SIZE),
         ]),
         SensorConfig("full-light-noise", "astra2_full.tsv", 5, PRESSURE_THRESHOLD_ASTRA2, sensors=[
-            SensorConfig.SensorConfigEntry(20, 0, 20),
-            SensorConfig.SensorConfigEntry(20, 0, 20),
-            SensorConfig.SensorConfigEntry(20, 0, 20),
+            SensorConfig.SensorConfigEntry(20, 0, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(20, 0, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(20, 0, MEDIAN_FILTER_SIZE),
         ]),
         SensorConfig("vac-light-noise", "dps310.tsv", 5, PRESSURE_THRESHOLD_ASTRA3, sensors=[
-            SensorConfig.SensorConfigEntry(20, 0, 20),
-            SensorConfig.SensorConfigEntry(20, 0, 20),
-            SensorConfig.SensorConfigEntry(20, 0, 20),
+            SensorConfig.SensorConfigEntry(20, 0, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(20, 0, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(20, 0, MEDIAN_FILTER_SIZE),
         ]),
         SensorConfig("vac-light-noise-1", "dps310_1.tsv", 5, PRESSURE_THRESHOLD_ASTRA3, sensors=[
-            SensorConfig.SensorConfigEntry(20, 0, 20),
-            SensorConfig.SensorConfigEntry(20, 0, 20),
-            SensorConfig.SensorConfigEntry(20, 0, 20),
+            SensorConfig.SensorConfigEntry(20, 0, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(20, 0, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(20, 0, MEDIAN_FILTER_SIZE),
         ]),
         SensorConfig("air-light-noise+outliers", "astra2_air.tsv", 5, PRESSURE_THRESHOLD_ASTRA2, sensors=[
-            SensorConfig.SensorConfigEntry(20, 0.1, 20),
-            SensorConfig.SensorConfigEntry(20, 0.1, 20),
-            SensorConfig.SensorConfigEntry(20, 0.1, 20),
+            SensorConfig.SensorConfigEntry(20, 0.1, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(20, 0.1, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(20, 0.1, MEDIAN_FILTER_SIZE),
         ]),
         SensorConfig("full-light-noise+outliers", "astra2_full.tsv", 5, PRESSURE_THRESHOLD_ASTRA2, sensors=[
-            SensorConfig.SensorConfigEntry(20, 0.1, 20),
-            SensorConfig.SensorConfigEntry(20, 0.1, 20),
-            SensorConfig.SensorConfigEntry(20, 0.1, 20),
+            SensorConfig.SensorConfigEntry(20, 0.1, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(20, 0.1, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(20, 0.1, MEDIAN_FILTER_SIZE),
         ]),
         SensorConfig("vac-light-noise+outliers", "dps310.tsv", 5, PRESSURE_THRESHOLD_ASTRA3, sensors=[
-            SensorConfig.SensorConfigEntry(20, 0.1, 20),
-            SensorConfig.SensorConfigEntry(20, 0.1, 20),
-            SensorConfig.SensorConfigEntry(20, 0.1, 20),
+            SensorConfig.SensorConfigEntry(20, 0.1, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(20, 0.1, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(20, 0.1, MEDIAN_FILTER_SIZE),
         ]),
         SensorConfig("vac-light-noise+outliers-1", "dps310_1.tsv", 5, PRESSURE_THRESHOLD_ASTRA3, sensors=[
-            SensorConfig.SensorConfigEntry(20, 0.1, 20),
-            SensorConfig.SensorConfigEntry(20, 0.1, 20),
-            SensorConfig.SensorConfigEntry(20, 0.1, 20),
+            SensorConfig.SensorConfigEntry(20, 0.1, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(20, 0.1, MEDIAN_FILTER_SIZE),
+            SensorConfig.SensorConfigEntry(20, 0.1, MEDIAN_FILTER_SIZE),
         ]),
     ]
     exitCode = 0
     for (i, config) in enumerate(configs):
-        passed, diff = test_separation(config)
-        timing = "after" if diff > 0 else "before"
-        if not passed:
-            print(f"\u001b[31mFAILED test: {config.name :<40} SEPARATED {diff}ms {timing} apogee\u001b[0m")
-            exitCode += 1
-        else:
-            print(f"\u001b[32mPASSED test: {config.name :<40} SEPARATED {diff}ms {timing} apogee\u001b[0m")
-            ...
-    exit(exitCode)
+        n_passed, after_diff_avg, before_diff_avg = 0, 0, 0
+        n_before, n_after = 0, 0
+        for _ in tqdm(range(n_reps)):
+            passed, diff = test_separation(config)
+            n_passed += passed
+            if diff < 0:
+                before_diff_avg -= diff
+                n_before += 1
+            else:
+                after_diff_avg += diff
+                n_after += 1
+        
+        print(f"""
+                {config.name} passed {n_passed} times
+                Average premature separation time: {before_diff_avg / n_before if n_before != 0 else 0}
+                Average separation delay: {after_diff_avg / n_after}
+            """.replace("\t", ""))
     
