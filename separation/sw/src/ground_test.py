@@ -4,8 +4,12 @@ import neopixel
 from analogio import AnalogIn
 from speaker import Speaker
 
+# define pins
 vin = AnalogIn(board.A1)
 buzzer = Speaker(Aout = board.MISO)
+led = neopixel.NeoPixel(board.NEOPIXEL, 1)
+serpow = board.A3
+servo = board.A2
 
 def get_voltage():
     reading = (vin.value * 3.3) / 65536
@@ -13,9 +17,10 @@ def get_voltage():
     R2 = 120000
     return (reading/R2) * (R1+R2)
 
-led = neopixel.NeoPixel(board.NEOPIXEL, 1)
-serpow = board.A3
-servo = board.A2
+def move(position):
+
+
+
 
 while True:
     led.fill((255, 0, 0))
