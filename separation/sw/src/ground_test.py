@@ -27,17 +27,19 @@ def move(position):
     servo.duty_cycle = (65535 * position) // 100
     time.sleep(0.5)
     serpow.value = False
-    led.fill((255, 0, 0))
+    led.fill((0, 0, 255))
     buzzer.shutup()
 
 
 
 
-while True:
+while True:    
     try:
         position = int(input("Enter position: "))
         move(position)
     except ValueError:
-        print("Invalid input - range is 1 to 100")
+        print("Invalid input - range is 0 to 100")
+        led.fill((255, 0, 0))
+        buzzer.beep(440)
     print (f"Voltage: {get_voltage()}")
     time.sleep(1)
